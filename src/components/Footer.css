@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.footer {
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  background-color: #262e42;
+  position: relative;
+  bottom: -40px;
+  transition: all 0.5s;
+  font-family: Montserrat;
+}
+.hero {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social i,
+.contacts i {
+  font-size: 20px;
+  margin-left: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.contacts i {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.up {
+  bottom: 90px;
+}
+.rotate {
+  transform: rotateZ(540deg);
+}
+.dissolve {
+  opacity: 0;
+}
+/* footerHidden start */
+
+.footerHidden img {
+  width: 110px;
+}
+.villian {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hiddenLeft {
+  display: flex;
+}
+.hiddenLeft p {
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  align-items: center;
+}
+.rightCl {
+  margin-left: 50px;
+}
+.hiddenRight {
+  text-align: center;
+}
+.hiddenRight p:nth-child(2) {
+  margin-top: 10px;
+}
+.hiddenRight .social {
+  margin-top: 10px;
+}
+.hiddenRight .social i {
+  cursor: pointer;
+}
+
+/* footerHidden end */

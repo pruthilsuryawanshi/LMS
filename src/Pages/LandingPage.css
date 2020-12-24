@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.box {
+  width: 1644px;
+  height: 794px;
+  background-color: rgb(221, 241, 226) !important;
+  margin: 0 auto !important;
+  margin-top: 45px !important;
+}
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.demo {
+  background-color: #ff5a5a;
+  border-radius: 10px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo:hover {
+  background-color: #c54646;
+}
+.font {
+  color: #262e42;
+}
+.font-bg {
+  background-color: #262e42;
+}
+.shift {
+  padding-left: 15px;
+  padding-right: 30px;
+}
+a {
+  transition: all 0.3s;
+}
+.a {
+  width: 600px;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 45px;
+  color: rgba(38, 46, 66, 1);
+}
+.a1 {
+  width: 550px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  color: rgba(38, 46, 66, 1);
+}
+.b {
+  white-space: nowrap;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: light;
+  font-size: 32px;
+  color: rgba(38, 46, 66, 1);
+}
+.c {
+  width: 348px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: #ddf1e2;
+  text-align: center;
+}
+.start-btn {
+  transition: all 0.4s;
+}
+.start-btn:hover {
+  color: rgba(38, 46, 66, 1);
+  background-color: #ddf1e2;
+  border: 2px solid #57bb72;
+}
+.input-s {
+  display: none;
+}
+#input {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
