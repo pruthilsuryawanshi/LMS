@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* .body{
+    background-color: #57bb72;
+} */
+.box {
+  width: 1644px;
+  height: 794px;
+  background-color: #ddf1e2;
+}
+* {
+  box-sizing: border-box;
+}
+.demo {
+  background-color: #ff5a5a;
+  border-radius: 10px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 10px 20px;
+  font-size: 19px;
+}
+.font {
+  color: #262e42;
+}
+.font-bg {
+  background-color: #262e42;
+}
+.shift {
+  padding-left: 15px;
+  padding-right: 30px;
+}
+.input-s {
+  display: none;
+}
+#input {
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+}
+.login {
+  opacity: 1;
+  color: #1a2334;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 61px;
+  text-align: center;
+}
+.headers {
+  opacity: 1;
+  color: #1a2334;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+.description {
+  opacity: 0.87843137254901963;
+  color: #1b2435;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+.forgotpass {
+  opacity: 0.7098039215686275;
+  color: #1b2435;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.input-field {
+  width: 377px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #ddf1e2;
+  border: 1.2px solid black;
+}
+.input-field:focus {
+  outline: none;
+}
+.checkbox {
+  width: 22px;
+  height: 19px;
+}
+.remember-me {
+  opacity: 1;
+  color: #262e42;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+}
+.acc {
+  opacity: 1;
+  color: #262e42;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 17px;
+}
+.loginBtn {
+  background-color: #57bb72;
+  padding: 8px 45px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat;
+}
+.mainImage {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.mainImage img {
+  width: 100%;
+}
+.registerBtn {
+  background-color: #262e42;
+  color: white;
+  padding: 15px 45px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Montserrat;
+  transition: background-color 0.3s;
+}
+.registerBtn:hover {
+  border: solid 2px #57bb72;
+  background-color: transparent;
+  color: #262e42;
+}

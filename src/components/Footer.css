@@ -2,17 +2,20 @@
 
 .footer {
   color: white;
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding: 5px;
   background-color: #262e42;
-  position: relative;
-  bottom: -40px;
+  position: fixed;
+  bottom: -150px;
+  left: 0;
   transition: all 0.5s;
   font-family: Montserrat;
+  /* height: 100px; */
 }
 .hero {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -24,6 +27,7 @@
   margin-left: 10px;
   transition: all 0.5s;
   cursor: pointer;
+  overflow: hidden;
 }
 .contacts i {
   margin-top: 5px;
@@ -38,7 +42,7 @@
   transition: all 0.6s;
 }
 .up {
-  bottom: 90px;
+  bottom: 0px;
 }
 .rotate {
   transform: rotateZ(540deg);
@@ -57,6 +61,7 @@
   align-items: center;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .hiddenLeft {
