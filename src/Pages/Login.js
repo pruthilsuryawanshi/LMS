@@ -97,65 +97,67 @@ const Login = ({ inputVisible, setInputVisible }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-row"
+          className="flex flex-row mainDiv"
         >
           {/* <!-- LEFT-DIV  image--> */}
-          <div className="pl-64 pt-12 mx-3 leftDiv">
+          <div className="pt-12 mx-3 leftDiv">
             <img src="Images/Log in page illustration.png" alt="stud-img" />
             <p>
-              Lorem ipsum odoer Lorem ipsum odoer Lorem ipsum odoer odoer Sign
-              Up
+              Lorem ipsum odoer Lorem ipsum odoer Lorem ipsum odoer odoer
+              <span style={{ color: "#3FA7D6" }}> Sign Up</span>
             </p>
           </div>
 
-          {/* <!-- right div  --> */}
+          <span className="middleLine"></span>
 
-          <div className="pl-40 rightDiv">
+          {/* <!-- right div  --> */}
+          <div className="rightDiv pt-8">
             <div>
               <p className="login">Log In</p>
             </div>
 
             <div>
               <div className="p-5">
-                <p className="headers">Email-Id</p>
+                <p className="headers">Email:</p>
                 <input
                   type="text"
                   className="input-field description border-transparent focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent p-3"
-                  placeholder="Enter Email-Id"
                 />
               </div>
 
               <div className="p-5">
-                <p className="headers">Password</p>
+                <p className="headers">Password:</p>
                 <input
                   type="password"
                   className="input-field description border-transparent focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent p-3"
-                  placeholder="Enter Password"
                 />
-                <a href="#">
-                  <p className="text-right pr-8 pt-2 forgotpass">
+
+                <div className="remember pt-6">
+                  <div className="flex">
+                    <div className="p-3">
+                      <input type="checkbox" className="checkbox" />
+                    </div>
+                    <p className="p-2 pl-0 remember-me">Remember Me</p>
+                  </div>
+                  <p
+                    className="text-right pr-4 forgotpass"
+                    style={{ color: "#3FA7D6" }}
+                  >
                     forgot password?
                   </p>
-                </a>
-              </div>
-
-              <div className="flex flex-row p-4 pl-2">
-                <div className="p-3">
-                  <input type="checkbox" className="checkbox" />
                 </div>
-                <p className="p-2 pl-0 remember-me">Remember Me</p>
               </div>
             </div>
 
             <div className="text-center">
-              <button className="loginBtn">Login</button>
+              <button className="loginBtn">LOG IN</button>
             </div>
-
+            <br />
             <div>
               <div className="py-3 loginLine">
-                <hr />
+                <span className="hr"></span>
                 <p className="text-center forgotpass">or login using</p>
-                <hr />
+                <span className="hr"></span>
               </div>
               <div className="flex flex row p-4 justify-center ">
                 <div className="px-3">
@@ -165,19 +167,14 @@ const Login = ({ inputVisible, setInputVisible }) => {
                 </div>
                 <div className="px-3">
                   <div>
-                    <img src="Images/google.png" alt="google" />
+                    <img
+                      className="googleImg"
+                      src="Images/google.png"
+                      alt="google"
+                    />
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div>
-              <p className="text-center acc">
-                Don't have a account ?{" "}
-                <a className="sign-up text-blue-600" href="#">
-                  SIGN UP
-                </a>
-              </p>
             </div>
           </div>
         </motion.div>

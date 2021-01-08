@@ -58,6 +58,7 @@
   padding: 10px 20px;
   font-size: 19px;
   border: 2px solid #ff5a5a;
+  margin-right: 6px;
 }
 .demo:hover {
   background-color: rgb(221, 241, 226);
