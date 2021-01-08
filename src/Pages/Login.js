@@ -100,13 +100,17 @@ const Login = ({ inputVisible, setInputVisible }) => {
           className="flex flex-row"
         >
           {/* <!-- LEFT-DIV  image--> */}
-          <div className="pl-64 pt-12 mx-3">
-            <img src="Images/login-canva.svg" alt="stud-img" />
+          <div className="pl-64 pt-12 mx-3 leftDiv">
+            <img src="Images/Log in page illustration.png" alt="stud-img" />
+            <p>
+              Lorem ipsum odoer Lorem ipsum odoer Lorem ipsum odoer odoer Sign
+              Up
+            </p>
           </div>
 
           {/* <!-- right div  --> */}
 
-          <div className="pl-36">
+          <div className="pl-40 rightDiv">
             <div>
               <p className="login">Log In</p>
             </div>
