@@ -6,10 +6,11 @@
 }
 .App {
   background-color: #57bb72;
+  height: 100vh;
 }
 @media screen and (max-width: 1664px) {
   * {
     overflow: auto;
-    overflow-x: hidden;
+    /* overflow: hidden; */
   }
 }

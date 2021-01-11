@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+.landingPageMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .box {
-  width: 1664px;
-  height: 794px;
-  margin: 0 auto !important;
-  margin-top: 44px !important;
+  width: 90vh;
+  height: 90vh;
   opacity: 0.9;
   background: rgb(255, 255, 255, 0.8) !important;
-  margin-bottom: 50px !important;
-  /* box-shadow: 5px 10px 18px #696969; */
   box-shadow: 0 1.3px 3.2px -6px rgba(0, 0, 0, 0.034),
     0 3.1px 7.6px -6px rgba(0, 0, 0, 0.048),
     0 5.9px 14.3px -6px rgba(0, 0, 0, 0.06),
     0 10.5px 25.5px -6px rgba(0, 0, 0, 0.072),
     0 19.6px 47.6px -6px rgba(0, 0, 0, 0.086),
     0 47px 114px -6px rgba(0, 0, 0, 0.12);
-
-  overflow: hidden;
+  overflow-y: hidden;
 }
 * {
   box-sizing: border-box;
@@ -28,14 +28,19 @@
   object-fit: contain;
   width: 100%;
 }
+/* navbar start */
 .navbar {
   display: flex;
   justify-content: space-between;
+  width: 97%;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 .navLinks {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
+  width: 63%;
 }
 .navLinks a p {
   transition: all 0.5s;
@@ -45,6 +50,19 @@
   transform: scale(1.1);
   /* color: #57bb72; */
 }
+.navMiddle {
+  display: flex;
+  width: 450px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navRight {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between;
+}
+/* navbar end */
 
 .demo {
   background-color: #ff5a5a;
@@ -79,18 +97,17 @@
   text-align: center;
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 45px !important;
+  font-size: 45px;
   color: rgba(38, 46, 66, 1);
 }
 .a {
-  width: 680px;
   text-align: center;
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 51px !important;
+  font-size: 51px;
   color: rgba(38, 46, 66, 1);
 }
-.a1 {
+/* .a1 {
   width: 550px;
   text-align: center;
   font-family: Montserrat;
@@ -98,7 +115,7 @@
   font-weight: bold;
   font-size: 36px;
   color: rgba(38, 46, 66, 1);
-}
+} */
 .b {
   white-space: nowrap;
   text-align: center;
@@ -138,21 +155,63 @@
 .search {
   display: flex;
   align-items: center;
-  padding-top: 45px !important  ;
+  padding-top: 45px !important;
 }
 .inputSearch {
   display: inherit;
   padding: 3px;
   outline: none;
 }
-
 .fa-search {
-  margin-left: 147px;
   cursor: pointer;
 }
+/* main start */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.mainContent {
+  text-align: center;
+}
+.mainContent .title {
+  text-align: center;
+}
+.mainImg img {
+  width: 100%;
+}
+/* main start */
 
 @media screen and (max-width: 1664px) {
-  .box {
-    width: 90% !important;
+  /* .box {
+    width: 90vw !important;
+    height: 600px !important;
+  } */
+}
+@media screen and (max-width: 1664px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .navLinks {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .a {
+    font-size: 40px;
+  }
+  .ab {
+    font-size: 35px;
+  }
+  .b {
+    font-size: 25px;
+  }
+  .mainImg img {
+    /* width: 400px; */
   }
 }

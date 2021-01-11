@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* .body{
-    background-color: #57bb72;
-} */
 * {
   margin: 0px;
   padding: 0px;
@@ -25,40 +22,6 @@
   top: -100px !important;
 }
 
-#box {
-  position: absolute;
-  /* width: 1172px;
-  height: 487px; */
-  left: 236px;
-  top: 152px;
-  overflow: visible;
-}
-#p {
-  position: absolute;
-  left: 64px;
-  top: 245px;
-  overflow: visible;
-  font-family: Montserrat;
-  font-weight: normal;
-  font-size: 24px;
-  text-align: center;
-  color: #262e42;
-}
-#arrow {
-  position: absolute;
-  left: 242px;
-  top: 166px;
-  overflow: visible;
-}
-#btn {
-  display: block;
-  margin: 678px auto;
-  width: 349px;
-  height: 79px;
-  overflow: visible;
-  align-items: center;
-  justify-content: center;
-}
 .mainDiv {
   display: flex;
   justify-content: space-evenly;

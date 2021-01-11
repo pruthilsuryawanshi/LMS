@@ -59,7 +59,7 @@ const App = () => {
             />
           </Switch>
         </AnimatePresence>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );
