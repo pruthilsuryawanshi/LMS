@@ -18,9 +18,9 @@ const LandingPage = ({ inputVisible, setInputVisible }) => {
         alt=""
       />
       <div className="landingPageMain">
-        <div className="box m-14">
+        <div className="box">
           {/*  navbar */}
-          <div className="flex-row navbar">
+          <div className="navbar">
             {/* <!-- kids galaxy logo --> */}
             <div className="">
               <Link to="/">
@@ -95,7 +95,7 @@ const LandingPage = ({ inputVisible, setInputVisible }) => {
                 <h1 className="ab">OF ORDINARY LEARNING</h1>
                 <p className="b">Lets build a brighter future together</p>
               </div>
-              <div className="px-24 py-7 flex justify-center">
+              <div className="startBtn">
                 <button className="font-bg start-btn focus:outline-none c justify-self-center p-4">
                   Start learning for free
                 </button>

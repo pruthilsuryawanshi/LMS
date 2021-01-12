@@ -10,7 +10,6 @@
 }
 @media screen and (max-width: 1664px) {
   * {
-    overflow: auto;
-    /* overflow: hidden; */
+    /* overflow: auto; */
   }
 }
