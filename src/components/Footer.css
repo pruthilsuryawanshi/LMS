@@ -5,17 +5,16 @@
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 5px;
+  padding: 0.4%;
   background-color: #262e42;
   position: fixed;
-  bottom: -150px;
+  bottom: -152px;
   left: 0;
   transition: all 0.5s;
   font-family: Montserrat;
-  /* height: 100px; */
 }
-.hero {
-  width: 85%;
+.footer-container {
+  width: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -30,19 +29,24 @@
   overflow: hidden;
 }
 .contacts i {
-  margin-top: 5px;
-  margin-right: 5px;
+  /* margin-top: 5px;
+  margin-right: 5px; */
 }
 .contacts {
   display: flex;
   align-items: center;
+}
+.contacts h2 {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 5px;
 }
 .arrow {
   cursor: pointer;
   transition: all 0.6s;
 }
 .up {
-  bottom: 0px;
+  bottom: 0px !important;
 }
 .rotate {
   transform: rotateZ(540deg);
@@ -88,6 +92,34 @@
 }
 .hiddenRight .social i {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1290px) {
+  .social i,
+  .contacts i {
+    font-size: 16px;
+  }
+  .contacts h2 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .villian img {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .hiddenRight {
+    display: none;
+  }
+  .hiddenLeft {
+    width: 100%;
+  }
+  .hiddenLeft .links {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 /* footerHidden end */

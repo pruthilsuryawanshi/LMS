@@ -9,12 +9,26 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <!-- dialogflow -->
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <!-- Jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,51 +48,17 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <!-- dialogflow style bootsrap -->
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script> -->
     <!-- Jquery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      //To minimise the height of chatbox
-      $(document).ready(function () {
-        window.addEventListener("dfMessengerLoaded", function (event) {
-          $r1 = document.querySelector("df-messenger");
-          $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
-          $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input");
-          var sheet = new CSSStyleSheet();
-          // manage box height from here
-          sheet.replaceSync(
-            `div.chat-wrapper[opened="true"] { height: 450px }`
-          );
-          $r2.shadowRoot.adoptedStyleSheets = [sheet];
-        });
-      });
-    </script>
-    <style>
-      /* custom css for chatbox */
-      /* find it here : https://cloud.google.com/dialogflow/es/docs/integrations/dialogflow-messenger */
-      df-messenger {
-        --df-messenger-bot-message: #bdfcbf;
-        --df-messenger-button-titlebar-color: #7ec472;
-        --df-messenger-chat-background-color: #fafafa;
-        --df-messenger-font-color: black;
-        --df-messenger-send-icon: #7ec472;
-        --df-messenger-user-message: #7ec472;
-      }
-    </style>
+
     <title>Kids Galaxy</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- This is the main code for chatbot  -->
-    <!-- we can add more fields refer: https://cloud.google.com/dialogflow/es/docs/integrations/dialogflow-messenger -->
-    <df-messenger
-      intent="WELCOME"
-      chat-icon="https://cdn.iconscout.com/icon/premium/png-512-thumb/chatbot-4-683088.png"
-      chat-title="KG Boy"
-      agent-id="4866338e-dd28-4491-82fe-056daa4f8d5b"
-      language-code="en"
-    >
-    </df-messenger>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>

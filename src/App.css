@@ -2,14 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow-x: hidden; */
 }
-.App {
-  background-color: #57bb72;
-  height: 100vh;
+body {
+  background-color: rgb(87, 187, 113, 0.15);
 }
 @media screen and (max-width: 1664px) {
-  * {
-    /* overflow: auto; */
-  }
 }

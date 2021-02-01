@@ -2,185 +2,89 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 import "./Login.css";
-import "./Tailwind.css";
 const Login = ({ inputVisible, setInputVisible }) => {
   return (
-    <body>
-      <motion.img
-        initial={{ opacity: 1, y: "-50vh" }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 1, y: "-50vh" }}
-        transition={{ duration: 0.8 }}
-        className="overlayLogin"
-        src="Images/OverlayLogin.png"
-        alt=""
-      />
-      <div className="bg-gray-200 box m-14 ">
-        {/* <!-- navbar --> */}
-        <div className="flex flex-row navbar">
-          {/* <!-- kids galaxy logo --> */}
-          <div className="p-5">
-            <Link to="/">
-              <img src="Images/logo.png" alt="kids-galaxy-logo" />
-            </Link>
-          </div>
-          {/* <!--  nav links   --> */}
-          <div className="navLinks">
-            <div className="flex flex-row" id="shift">
-              <div className="p-4 m-3 text-2xl font-semibold">
-                <a className="hover:text-green-500" href="#">
-                  <p>Courses</p>
-                </a>
-              </div>
-              <div className="p-4 m-3 text-2xl font-semibold">
-                <a className="hover:text-green-500" href="#">
-                  <p>Who We Are</p>
-                </a>
-              </div>
-              <div className="p-4 m-3 text-2xl font-semibold">
-                <a className="hover:text-green-500" href="#">
-                  <p>What We Do</p>
-                </a>
-              </div>
-            </div>
-
-            {/* <!-- search bar --> */}
-
-            <div className="p flex flex-row searchDiv">
-              {/* <button className=" focus:outline-none search h-10 py-9">
-              {inputVisible && (
-                <input
-                  className="inputSearch"
-                  type="text"
-                  placeholder="Search"
-                />
-              )}
-              <img
-                src="Images/search.svg"
-                alt=""
-                onClick={(e) => {
-                  e.preventDefault();
-                  setInputVisible(!inputVisible);
-                }}
-              />
-            </button> */}
-              <form action="">
-                <img src="Images/search.svg" class="fa fa-search" />
-              </form>
-            </div>
-
-            {/* <!-- sign in --> */}
-            <div className="flex flex-row m-3 p-4">
-              <button className="flex flex-row focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50">
-                <div className="p-2">
-                  <img src="Images/icon.svg" alt="" />
-                </div>
-                <Link to="/login">
-                  <span className="font-semibold text-2xl">Sign In</span>
-                </Link>
-              </button>
-            </div>
-
-            {/* <!-- demo button --> */}
-            <div className="p-4 content-end">
-              <button className="demo p-3 font-semibold focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 text-2xl text-white">
-                Request Demo
-              </button>
-            </div>
-          </div>
+    <div className="overlay container-fluid">
+      <nav className="navbar navbarStyle">
+        <div className="container-fluid">
+          <Link to="/">
+            <img
+              src="Images/logo.png"
+              alt="Kids Galaxy Logo"
+              className="d-inline-block align-top"
+            />
+          </Link>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex flex-row mainDiv"
-        >
-          {/* <!-- LEFT-DIV  image--> */}
-          <div className="pt-12 mx-3 leftDiv">
-            <img src="Images/Log in page illustration.png" alt="stud-img" />
+      </nav>
+      {/* <!-- Image and text -->
+      {/* <img className="overlayImg" src="Images/Overlay Shapes.png" alt="" /> */}
+      <div className="row mainContent">
+        <div className="mainLeft col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div className="mainLeftContent">
+            <img src="Images/Login Illustration.png" alt="" />
             <p>
-              Lorem ipsum odoer Lorem ipsum odoer Lorem ipsum odoer odoer
-              <span style={{ color: "#3FA7D6" }}> Sign Up</span>
+              To get exciting discounts, offers, free study resources, special
+              programs from Kids Galaxy
+              <span className="blue"> Sign Up here.</span>
             </p>
           </div>
-
-          <span className="middleLine"></span>
-
-          {/* <!-- right div  --> */}
-          <div className="rightDiv pt-8">
-            <div>
-              <p className="login">Log In</p>
-            </div>
-
-            <div>
-              <div className="p-5">
-                <p className="headers">Email:</p>
-                <input
-                  type="text"
-                  className="input-field description border-transparent focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent p-3"
-                />
+          <div className="middleLine"></div>
+        </div>
+        {/* mainLeft end */}
+        <div className="mainRight col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div className="card loginCard">
+            <div className="cardContent">
+              <div className="title">
+                <h1>Log in</h1>
               </div>
-
-              <div className="p-5">
-                <p className="headers">Password:</p>
-                <input
-                  type="password"
-                  className="input-field description border-transparent focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent p-3"
-                />
-
-                <div className="remember pt-6">
-                  <div className="flex">
-                    <div className="p-3">
-                      <input type="checkbox" className="checkbox" />
-                    </div>
-                    <p className="p-2 pl-0 remember-me">Remember Me</p>
-                  </div>
-                  <p
-                    className="text-right pr-4 forgotpass"
-                    style={{ color: "#3FA7D6" }}
-                  >
-                    forgot password?
+              <div className="inputs">
+                <div className="input1">
+                  <p>E-mail</p>
+                  <input type="text" />
+                </div>
+                <div className="input2">
+                  <p>Password</p>
+                  <input type="password" />
+                </div>
+              </div>
+              <div className="checkbox">
+                <div className="rememberBox">
+                  <input type="checkbox" />
+                  <p>Remember me</p>
+                </div>
+                <p className="blue">Forgot Password</p>
+              </div>
+              <div className="login">
+                <button className="loginBtn">Log in</button>
+              </div>
+              <div className="orLogin">
+                <div className="hero">
+                  <span className="hr"></span>
+                  <p>Or log in using</p>
+                  <span className="hr"></span>
+                </div>
+                <div className="faceG">
+                  <img src="Images/fb.png" alt="" />
+                  <img src="Images/google.png" alt="" />
+                  <p>
+                    New User?
+                    <Link to="/signup">
+                      <span className="blue"> Sign Up</span>
+                    </Link>
                   </p>
                 </div>
               </div>
             </div>
-
-            <div className="text-center">
-              <button className="loginBtn">LOG IN</button>
-            </div>
-            <br />
-            <div>
-              <div className="py-3 loginLine">
-                <span className="hr"></span>
-                <p className="text-center forgotpass">or login using</p>
-                <span className="hr"></span>
-              </div>
-              <div className="flex flex row p-4 justify-center ">
-                <div className="px-3">
-                  <div>
-                    <img src="Images/fb.png" alt="facebook" />
-                  </div>
-                </div>
-                <div className="px-3">
-                  <div>
-                    <img
-                      className="googleImg"
-                      src="Images/google.png"
-                      alt="google"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/*  card content  */}
           </div>
-        </motion.div>
+          {/* card end*/}
+        </div>
+        {/* mainRight end */}
       </div>
-      <Footer />
-    </body>
+    </div>
   );
 };
 

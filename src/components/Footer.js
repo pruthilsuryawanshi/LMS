@@ -4,26 +4,27 @@ import "./Footer.css";
 const Footer = () => {
   const [footer, setFooter] = useState(false);
 
-  //   const footerhandler = () => {
-  //     setFooter(!footer);
-  //   };
+  // const footerhandler = () => {
+  //   setFooter(!footer);
+  // };
 
   return (
     <div className={`footer ${footer && "up"}`}>
-      <div className="hero">
+      <div className="footer-container">
         <div className={`social ${footer && "dissolve"}`}>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-facebook-square"></i>
+          <i className="fab fa-instagram"></i>
+          <i className="fab fa-linkedin"></i>
         </div>
         <div
           className={`arrow ${footer && "rotate"}`}
           onClick={() => setFooter(!footer)}
         >
-          <img src="Images/Footer Up Icon.svg" alt="" />
+          <img src="Images/Footer Up Icon.png" alt="" />
         </div>
         <div className={`contacts ${footer && "dissolve"}`}>
-          <i class="fas fa-comment-alt"></i>
+          {/* <i class="fas fa-comment-alt"></i> */}
+          <img src="Images/Icon material-chat.png" alt="" />
           <h2>Contact</h2>
         </div>
       </div>
@@ -60,9 +61,9 @@ const Footer = () => {
             </p>
             <p>All rights Reserved</p>
             <div className="social">
-              <i class="fab fa-facebook-square"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-facebook-square"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-linkedin"></i>
             </div>
           </div>
           {/* hiddenRight end */}

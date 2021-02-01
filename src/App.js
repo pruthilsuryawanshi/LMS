@@ -11,7 +11,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LandingPage from "./Pages/LandingPage";
 import Login from "./Pages/Login";
-import IndividualLearning from "./Pages/IndividualLearning";
+import Signup from "./Pages/Signup";
 import "./App.css";
 
 const App = () => {
@@ -53,9 +53,15 @@ const App = () => {
               )}
             />
             <Route
-              path="/IndividualLearning"
+              path="/signup"
               exact
-              component={IndividualLearning}
+              render={(props) => (
+                <Signup
+                  {...props}
+                  inputVisible={inputVisible}
+                  setInputVisible={setInputVisible}
+                />
+              )}
             />
           </Switch>
         </AnimatePresence>

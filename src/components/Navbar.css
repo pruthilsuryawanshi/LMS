@@ -1,0 +1,220 @@
+.navStyle {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.navRight {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLinks {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+.navLinks p {
+  margin: 0;
+  font-size: 20px;
+}
+.nav-search-input {
+  width: 15px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  background-image: url("../assets/Icon\ awesome-search.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.navSearch-user {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navSearch-user button {
+  padding: 10px 15px;
+  outline: none !important;
+  border: 1px solid #ff5a5a;
+  background-color: #ff5a5a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+.navSearch-user button:hover {
+  background-color: transparent;
+  color: #ff5a5a;
+}
+
+.user {
+  display: flex;
+}
+.user p {
+  margin: 0;
+  text-decoration: none !important;
+  color: black;
+}
+
+/* hamburger start */
+#nav-icon4 {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: rgb(87, 187, 113);
+  border-radius: 15px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 15px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 30px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+/* hamburger end */
+
+.hiddenNavSearch-user button {
+  padding: 10px 15px;
+  outline: none !important;
+  border: 1px solid #ff5a5a;
+  background-color: #ff5a5a;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+.hiddenNav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2%;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+
+  border-radius: 15px;
+  display: none;
+}
+.hamburgerOpen {
+  display: inherit;
+}
+/* navbar end */
+@media screen and (max-width: 1500px) {
+  .navRight {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .navRight {
+    width: 70%;
+    justify-content: space-around;
+  }
+  .navLinks p {
+    font-size: 18px;
+  }
+  .navSearch-user button {
+    padding: 2% 4%;
+    font-size: 14px;
+  }
+  .user p {
+    font-size: 14px;
+  }
+  .navLogo {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .navSearch-user {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navLinks,
+  .navSearch-user {
+    display: none;
+  }
+  .navRight {
+    width: auto;
+  }
+  #nav-icon4 {
+    display: inherit;
+  }
+}

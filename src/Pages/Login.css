@@ -1,93 +1,401 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+body button,
+input {
+  outline: none !important;
 }
-.box {
-  /* width: 1644px;
-  height: 794px; */
-  /* background-color: #ddf1e2; */
+/* navbar start */
+
+/* navbar end */
+.overlay {
+  width: 100%;
+  object-fit: contain;
+  /* background-image: url("../../public/Images/Overlay\ Shapes.png"); */
+  /* background-color: rgb(87, 187, 113, 0.15); */
 }
-.demo {
-  background-color: #ff5a5a;
-  border-radius: 10px;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  padding: 10px 20px;
-  font-size: 19px;
-}
-.overlayLogin {
+.overlayImg {
+  width: 100vw;
+  height: 100%;
   position: absolute;
-  top: -100px !important;
 }
-
-.mainDiv {
-  display: flex;
-  justify-content: space-evenly;
-}
-.leftDiv {
-  position: relative;
-}
-.leftDiv img {
-  width: 90%;
+.mainContent {
+  width: 100%;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
 }
 
-.leftDiv p {
-  font-size: 28px;
-  width: 500px;
+/* main Left start */
+.mainLeft {
   text-align: center;
-  padding-top: 50px;
-  color: #1a2334;
+  width: 70% !important;
 }
-.login {
-  font-weight: 400 !important;
-  font-size: 47px !important;
-}
-.loginBtn {
-  border: 2px solid #57bb72;
-  transition: all 0.5s;
-  font-size: 22px !important;
-  padding: 8px 40px !important;
-  border-radius: 18px !important;
-}
-.loginBtn:hover {
-  color: #57bb72;
-  background-color: transparent;
-}
-.input-field {
-  width: 430px !important;
-}
-
-.middleLine {
-  height: 400px;
-  border-left: 2px solid rgb(161, 161, 161);
+.mainLeft img {
+  display: block;
+  width: 600px;
   position: relative;
-  bottom: -80px;
-}
-.headers {
-  font-size: 17px !important;
-  font-weight: 500 !important;
-}
-.loginLine {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
   margin: 0 auto;
-}
-.hr {
-  width: 120px;
-  border-top: 2px solid rgb(161, 161, 161);
-  position: relative;
-  top: 10px;
-}
-.googleImg {
-  width: 42px;
   object-fit: contain;
 }
-.remember {
+.mainLeft p {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 27px;
+  margin-top: 20px;
+}
+.mainLeftContent {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* main Left end */
+.middleLine {
+  border-right: 1px solid grey;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+}
+/* mainRight start */
+.mainRight {
+  text-align: center;
+}
+.loginCard {
+  width: 600px;
+  margin: 0 auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 3% !important;
+  background-color: #f9f9f9 !important;
+  border: none !important;
+  box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.022),
+    0 2.5px 5.3px rgba(0, 0, 0, 0.032), 0 4.8px 9.9px rgba(0, 0, 0, 0.04),
+    0 8.5px 17.6px rgba(0, 0, 0, 0.048), 0 15.9px 33px rgba(0, 0, 0, 0.058),
+    0 38px 79px rgba(0, 0, 0, 0.08);
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+.card .title {
+  border-bottom: 0.2vh solid rgb(175, 175, 175);
+}
+.card .title h1 {
+  /* font-size: 2.5vw; */
+  font-size: 50px;
+  color: #57bb71;
+  font-weight: 600;
+  padding: 1%;
+  /* margin-bottom: 20px; */
+  /* margin-top: 30px; */
+}
+.inputs {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: left;
+}
+.inputs p {
+  margin: 0;
+  margin-left: 1vw;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.inputs input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5vh;
+  font-size: 20px;
+  border: 0.1vw solid rgb(105, 105, 105);
+}
+.checkbox {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.checkbox p {
+  margin: 0;
+  font-size: 20px;
+}
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.rememberBox {
   display: flex;
   align-items: center;
+  width: 155px;
   justify-content: space-between;
+}
+.login {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.loginBtn {
+  width: 100%;
+  background-color: rgb(87, 187, 113);
+  border: 2px solid rgb(87, 187, 113);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1.2vh;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s;
+}
+.loginBtn:hover {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.hero .hr {
+  width: 30%;
+  border-top: 0.1vh solid rgb(161, 161, 161);
+  position: relative;
+  /* top: 10px; */
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.faceG img {
+  width: 12%;
+}
+.faceG img:last-of-type {
+  margin-left: 2%;
+}
+
+.faceG p {
+  font-size: 20px;
+}
+.blue {
+  color: #3fa7d6;
+  font-weight: 500;
+}
+.orLogin {
+  margin-bottom: 30px;
+}
+/* mainRight end */
+
+@media screen and (max-width: 1500px) {
+  .mainLeft p {
+    width: 100%;
+    font-size: 22px;
+  }
+  .loginCard {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 1355px) {
+  .mainLeft img {
+    width: 500px;
+  }
+  .loginCard {
+    width: 90%;
+  }
+  .card .title h1 {
+    font-size: 40px;
+  }
+  .inputs input {
+    padding: 2.1%;
+  }
+  .inputs p {
+    font-size: 20px;
+    margin-top: 2%;
+  }
+  .checkbox {
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  .checkbox p {
+    font-size: 20px;
+  }
+  .login {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .loginCard {
+    width: 70%;
+  }
+  .mainLeft img {
+    width: 400px;
+  }
+  .navbarStyle img {
+    /* width: 20%; */
+  }
+
+  .card .title h1 {
+    font-size: 3vw;
+  }
+  .inputs input {
+    /* padding: 9px; */
+  }
+  .inputs p {
+    font-size: 1.3vw;
+    /* margin-top: 10px; */
+  }
+  .checkbox {
+    /* margin-top: 7px; */
+    /* margin-bottom: 10px; */
+  }
+  .checkbox p {
+    font-size: 1.2vw;
+  }
+  .login {
+    /* margin-bottom: 10px; */
+  }
+  .loginBtn {
+    font-size: 1.3vw;
+  }
+  .faceG p {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .inputs {
+    width: 100%;
+  }
+  .checkbox {
+    width: 100%;
+  }
+  .login {
+    width: 100%;
+  }
+  .mainLeft img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mainLeft {
+    display: none;
+  }
+  .loginCard {
+    width: 600px;
+  }
+  .card .title h1 {
+    font-size: 40px;
+  }
+  .inputs input {
+    padding: 2.1%;
+  }
+  .inputs p {
+    font-size: 20px;
+    margin-top: 2%;
+  }
+  .checkbox {
+    flex-direction: initial;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+  .checkbox p {
+    font-size: 20px;
+  }
+  .login {
+    margin-bottom: 10px;
+  }
+  .loginBtn {
+    font-size: 22px;
+  }
+  .faceG p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .checkbox {
+    align-items: initial;
+    width: 90%;
+  }
+  .navbarStyle img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbarStyle {
+    padding-top: 5%;
+  }
+  .navbarStyle img {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 660px) {
+  .loginCard {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .checkbox {
+    text-align: left;
+    /* flex-direction: column; */
+  }
+  .checkbox p {
+    font-size: 18px;
+  }
+  .loginBtn {
+    font-size: 20px;
+  }
+  .faceG p {
+    font-size: 18px;
+  }
+  .orLogin {
+    margin-bottom: 10px;
+  }
+  .rememberBox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mainRight {
+    margin-top: 10vh;
+  }
+  .checkbox {
+    width: 98%;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainRight {
+    margin-top: 20vh;
+  }
+  .inputs p {
+    font-size: 18px;
+  }
+  .loginBtn {
+    font-size: 18px;
+  }
+  .checkbox p {
+    font-size: 16px;
+  }
+  .hr {
+  }
 }

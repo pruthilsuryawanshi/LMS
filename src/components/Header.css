@@ -1,17 +1,23 @@
 .header {
   background-color: #262e42;
   text-align: center;
+  width: 100%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   color: white;
-  padding: 5px;
-  box-shadow: 0 2.3px 2.2px -11px rgba(0, 0, 0, 0.141),
-    0 5.6px 5.3px -11px rgba(0, 0, 0, 0.202),
-    0 10.5px 10px -11px rgba(0, 0, 0, 0.25),
-    0 18.8px 17.9px -11px rgba(0, 0, 0, 0.298),
-    0 35.1px 33.4px -11px rgba(0, 0, 0, 0.359),
-    0 84px 80px -11px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.02),
+    0 2.7px 5.3px rgba(0, 0, 0, 0.028), 0 5px 10px rgba(0, 0, 0, 0.035),
+    0 8.9px 17.9px rgba(0, 0, 0, 0.042), 0 16.7px 33.4px rgba(0, 0, 0, 0.05),
+    0 40px 80px rgba(0, 0, 0, 0.07);
+
+  position: relative;
+  z-index: 100;
+  padding: 0;
 }
 .header p {
   font-weight: 600;
+  margin: 0;
+}
+.quote {
+  padding: 5px;
 }
