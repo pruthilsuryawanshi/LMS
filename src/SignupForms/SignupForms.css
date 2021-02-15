@@ -41,6 +41,9 @@
   color: rgb(87, 187, 113);
   background-color: transparent;
 }
+.CreatedAccount-half-inputs input {
+  padding: 13px;
+}
 
 /* //Personal Details 1 start */
 .personalDetails_1-inputs {
@@ -111,4 +114,7 @@
 }
 .EducationalDetails_colorBlack {
   color: black;
+}
+.confirmation-code {
+  margin-bottom: 10%;
 }

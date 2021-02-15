@@ -1,15 +1,56 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-const EducationalDetails_1 = ({ nextStep, previousStep }) => {
+// import { AuthContext } from "../shared/context/auth-context";
+import Amplify, { Auth } from "aws-amplify";
+import awsconfig from "../aws-exports";
+Auth.configure(awsconfig);
+
+const EducationalDetails_1 = ({
+  nextStep,
+  previousStep,
+  email,
+  firstName,
+  lastName,
+  phone,
+  password,
+}) => {
+  // const auth = useContext(AuthContext);
+  const history = useHistory();
   const [stateBoard, setStateBoard] = useState(false);
-  const [selected, setSelected] = useState(false);
+  // const [selected, setSelected] = useState(false);
+
+  const handleSignup = async () => {
+    let user;
+    try {
+      user = await Auth.signUp({
+        username: email,
+        password: password,
+        attributes: {
+          email: email,
+          phone_number: phone,
+          firstName: firstName,
+        },
+      });
+      console.log(user);
+      history.push("/login");
+    } catch (error) {
+      console.log("error signing up:", error);
+      alert(error.message);
+    }
+
+    if (user) {
+      // auth.login();
+      //sets the context isLoggedIn state to true
+    }
+  };
 
   return (
     <div className="card loginCard">
       <div className="cardContent">
         <div className="title">
-          <h1>Educational Details 1</h1>
+          <h1>Educational Details</h1>
         </div>
         <div className="inputs">
           <p>Select your board</p>
@@ -111,7 +152,9 @@ const EducationalDetails_1 = ({ nextStep, previousStep }) => {
           <button className="loginBtn backBtn" onClick={previousStep}>
             Back
           </button>
-          <button className="loginBtn">Signup</button>
+          <button className="loginBtn" onClick={handleSignup}>
+            Signup
+          </button>
         </div>
         <div className="orLogin">
           <div className="hero">

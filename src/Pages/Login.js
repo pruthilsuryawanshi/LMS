@@ -1,11 +1,32 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState, useContext } from "react";
+// import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 
+import { AuthContext } from "../shared/context/auth-context";
+import { Auth } from "aws-amplify";
+import awsconfig from "../aws-exports";
 import "./Login.css";
-const Login = ({ inputVisible, setInputVisible }) => {
+Auth.configure(awsconfig);
+
+const Login = () => {
+  const auth = useContext(AuthContext);
+  const [loginUsername, setLoginUsername] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+
+  const handleLogin = async () => {
+    try {
+      const user = await Auth.signIn(loginUsername, loginPassword);
+      // console.log(user);
+      // history.push("/dashboard");
+      // const session = await Auth.currentSession();
+      const userAuth = await Auth.currentAuthenticatedUser();
+      auth.login();
+    } catch (error) {
+      // console.log("error signing in", error);
+      alert(error.message);
+    }
+  };
+
   return (
     <div className="overlay container-fluid">
       <nav className="navbar navbarStyle">
@@ -14,7 +35,7 @@ const Login = ({ inputVisible, setInputVisible }) => {
             <img
               src="Images/logo.png"
               alt="Kids Galaxy Logo"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top nav-homeBtn-img"
             />
           </Link>
         </div>
@@ -43,11 +64,21 @@ const Login = ({ inputVisible, setInputVisible }) => {
               <div className="inputs">
                 <div className="input1">
                   <p>E-mail</p>
-                  <input type="text" />
+                  <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    onChange={(e) => setLoginUsername(e.target.value)}
+                    value={loginUsername}
+                  />
                 </div>
                 <div className="input2">
                   <p>Password</p>
-                  <input type="password" />
+                  <input
+                    type="password"
+                    placeholder="Enter your Password"
+                    onChange={(e) => setLoginPassword(e.target.value)}
+                    value={loginPassword}
+                  />
                 </div>
               </div>
               <div className="checkbox">
@@ -58,7 +89,9 @@ const Login = ({ inputVisible, setInputVisible }) => {
                 <p className="blue">Forgot Password</p>
               </div>
               <div className="login">
-                <button className="loginBtn">Log in</button>
+                <button className="loginBtn" onClick={handleLogin}>
+                  Log in
+                </button>
               </div>
               <div className="orLogin">
                 <div className="hero">

@@ -1,7 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const PersonalDetails_1 = ({ nextStep, previousStep }) => {
+const PersonalDetails_1 = ({
+  nextStep,
+  previousStep,
+  firstName,
+  setFirstName,
+  lastName,
+  setLastName,
+  phone,
+  setPhone,
+}) => {
   return (
     <div className="card loginCard">
       <div className="cardContent">
@@ -10,18 +19,31 @@ const PersonalDetails_1 = ({ nextStep, previousStep }) => {
         </div>
         <div className="inputs">
           <div className="CreateAccount-password-confirm">
-            <div className="">
+            <div>
               <p>First Name</p>
-              <input type="text" />
+              <input
+                type="text"
+                onChange={(e) => setFirstName(e.target.value)}
+                value={firstName}
+              />
             </div>
-            <div className="">
+            <div>
               <p>Last Name</p>
-              <input type="text" />
+              <input
+                type="text"
+                onChange={(e) => setLastName(e.target.value)}
+                value={lastName}
+              />
             </div>
           </div>
           <div className="input2 personalDetails_1-inputs">
             <p>Mobile Number</p>
-            <input type="text" className="personalDetails_1-mobile_numbers" />
+            <input
+              type="text"
+              className="personalDetails_1-mobile_numbers"
+              onChange={(e) => setPhone(e.target.value)}
+              value={phone}
+            />
             <select className="personalDetails_1-mobile_numbers_select">
               <option>+91</option>
               <option>+92</option>

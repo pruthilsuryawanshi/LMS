@@ -25,18 +25,18 @@ input {
   transform: translateY(-50%);
   left: 0;
 }
-
+.nav-homeBtn-img {
+  width: 15vw;
+}
 /* main Left start */
 .mainLeft {
   text-align: center;
-  width: 70% !important;
 }
 .mainLeft img {
-  display: block;
-  width: 600px;
+  width: 70%;
   position: relative;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: contain !important;
 }
 .mainLeft p {
   width: 700px;
@@ -90,13 +90,10 @@ input {
   border-bottom: 0.2vh solid rgb(175, 175, 175);
 }
 .card .title h1 {
-  /* font-size: 2.5vw; */
   font-size: 50px;
   color: #57bb71;
   font-weight: 600;
   padding: 1%;
-  /* margin-bottom: 20px; */
-  /* margin-top: 30px; */
 }
 .inputs {
   width: 80%;
@@ -109,15 +106,15 @@ input {
 .inputs p {
   margin: 0;
   margin-left: 1vw;
-  margin-bottom: 5px;
-  margin-top: 20px;
+  margin-bottom: 1%;
+  margin-top: 5%;
   font-size: 22px;
 }
 .inputs input {
   width: 100%;
   padding: 13px;
   border-radius: 5vh;
-  font-size: 20px;
+  font-size: 18px;
   border: 0.1vw solid rgb(105, 105, 105);
 }
 .checkbox {
@@ -126,8 +123,8 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 1.6%;
+  margin-bottom: 2.5%;
 }
 .checkbox p {
   margin: 0;
@@ -141,20 +138,23 @@ input {
 .rememberBox {
   display: flex;
   align-items: center;
-  width: 155px;
   justify-content: space-between;
 }
+.rememberBox p {
+  margin-left: 5px;
+}
+
 .login {
   width: 74%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 2.5%;
 }
 .loginBtn {
   width: 100%;
   background-color: rgb(87, 187, 113);
   border: 2px solid rgb(87, 187, 113);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1.8%;
+  padding-bottom: 1.8%;
   border-radius: 1.2vh;
   font-size: 22px;
   font-weight: 700;
@@ -172,13 +172,12 @@ input {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1.5%;
 }
 .hero .hr {
   width: 30%;
   border-top: 0.1vh solid rgb(161, 161, 161);
   position: relative;
-  /* top: 10px; */
 }
 .hero p {
   font-size: 18px;
@@ -199,7 +198,7 @@ input {
   font-weight: 500;
 }
 .orLogin {
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 /* mainRight end */
 
@@ -208,27 +207,26 @@ input {
     width: 100%;
     font-size: 22px;
   }
-  .loginCard {
-    width: 40vw;
-  }
-}
-@media screen and (max-width: 1355px) {
   .mainLeft img {
-    width: 500px;
+    width: 60%;
   }
   .loginCard {
-    width: 90%;
+    width: 80%;
   }
   .card .title h1 {
     font-size: 40px;
   }
-  .inputs input {
+  .CreatedAccount-half-inputs input .inputs input {
     padding: 2.1%;
   }
   .inputs p {
     font-size: 20px;
     margin-top: 2%;
   }
+  .inputs input {
+    font-size: 18px;
+  }
+
   .checkbox {
     margin-top: 1%;
     margin-bottom: 2%;
@@ -241,7 +239,7 @@ input {
   }
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1400px) {
   .loginCard {
     width: 70%;
   }
@@ -256,21 +254,20 @@ input {
     font-size: 3vw;
   }
   .inputs input {
-    /* padding: 9px; */
+    font-size: 16px;
   }
   .inputs p {
     font-size: 1.3vw;
-    /* margin-top: 10px; */
   }
   .checkbox {
-    /* margin-top: 7px; */
-    /* margin-bottom: 10px; */
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
   .checkbox p {
     font-size: 1.2vw;
   }
   .login {
-    /* margin-bottom: 10px; */
+    margin-bottom: 5%;
   }
   .loginBtn {
     font-size: 1.3vw;
@@ -363,6 +360,8 @@ input {
   }
   .loginBtn {
     font-size: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
   .faceG p {
     font-size: 18px;
