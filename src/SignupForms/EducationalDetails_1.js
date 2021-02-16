@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom";
 
 // import { AuthContext } from "../shared/context/auth-context";
 import Amplify, { Auth } from "aws-amplify";
-// import awsconfig from "../aws-exports";
-// Auth.configure(awsconfig);
+import awsconfig from "../aws-exports";
+Auth.configure(awsconfig);
 
 const EducationalDetails_1 = ({
   nextStep,
