@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 import { AuthContext } from "../shared/context/auth-context";
 import { Auth } from "aws-amplify";
-import awsconfig from "../aws-exports";
+// import awsconfig from "../aws-exports";
 import "./Login.css";
-Auth.configure(awsconfig);
+// Auth.configure(awsconfig);
 
 const Login = () => {
   const auth = useContext(AuthContext);
