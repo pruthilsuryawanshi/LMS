@@ -1,0 +1,136 @@
+.backBtn {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+  margin-right: 10px;
+}
+.login-underline:hover {
+  text-decoration: none;
+}
+.backBtn:hover {
+  background-color: rgb(87, 187, 113);
+  color: white;
+}
+
+.CreateAccount-password-confirm {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.CreateAccount-password-confirm p {
+  text-align: left;
+}
+
+.CreateAccount-password-confirm input {
+  width: 90%;
+}
+.CreateAccount_submitDiv {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.CreateAccount_submitBtn {
+  width: 100%;
+  background-color: rgb(87, 187, 113);
+  border: 2px solid rgb(87, 187, 113);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1.2vh;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s;
+}
+.CreateAccount_submitBtn:hover {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+}
+.CreatedAccount-half-inputs input {
+  padding: 0.4rem 0.2rem;
+}
+
+/* //Personal Details 1 start */
+.personalDetails_1-inputs {
+  position: relative;
+}
+.personalDetails_1-loginBtnDiv {
+  display: flex;
+}
+.personalDetails_1-mobile_numbers_select {
+  position: absolute;
+  left: 0;
+  top: 64%;
+  margin-left: 5%;
+  border: none;
+  font-size: 13px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.personalDetails_1-inputs {
+  margin-bottom: 10%;
+}
+.personalDetails_1-mobile_numbers {
+  padding-left: 18% !important;
+}
+/* //Personal Details 1 end */
+
+.EducationalDetailsBoard {
+  display: flex;
+}
+.EducationalDetailsBoard_board {
+  padding: 1px 24px;
+  border-radius: 30px;
+  color: white;
+  border: 2px solid #262e42;
+  margin-right: 15px;
+  margin-top: 2%;
+  cursor: pointer;
+  color: black;
+}
+.EducationalDetailsBoard_board:hover {
+  background-color: #262e42;
+  color: #fff;
+  font-weight: 600;
+}
+.EducationalDetailsBoard_board p {
+  margin-top: 0px;
+  font-size: 0.7rem;
+  padding-left: 0rem;
+  margin-left: 0.1rem;
+  margin-bottom: 0.3rem;
+}
+.EducationalDetails_class {
+  padding-top: 2%;
+}
+.EducationalDetails_class_select {
+  padding: 6px 20px;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 30px;
+  outline: none;
+}
+.EducationalDetails_class_remeberBox {
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.EducationalDetails_class_remeberBox p {
+  font-size: 10px;
+  position: fixed;
+  left: 22%;
+}
+.EducationalDetails_class_select_stateDiv {
+  width: 49%;
+}
+.EducationalDetails_class_select_state {
+  padding: 15px;
+  width: 100%;
+  font-size: 17px;
+  border-radius: 30px;
+  outline: none;
+}
+.EducationalDetails_colorBlack {
+  color: black;
+}
+.confirmation-code {
+  margin-bottom: 10%;
+}
