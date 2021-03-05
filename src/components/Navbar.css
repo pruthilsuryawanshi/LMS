@@ -412,3 +412,25 @@ li {
     left: 87vw;
   }
 }
+@media screen and (max-width: 320.98px) {
+  .navbar {
+    padding: 2vh 4vh 0vh 3vh;
+  }
+  .navLogo {
+    width: 31.5vh;
+    height: auto;
+  }
+  .nav-menu,
+  .requestDemoBtn,
+  .user {
+    display: none;
+  }
+  .nav-search-input {
+    /* position: relative; */
+    margin-right: 9vw;
+  }
+  #pencet {
+    left: 87vw;
+  }
+}
+
