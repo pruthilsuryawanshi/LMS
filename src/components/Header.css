@@ -1,0 +1,65 @@
+.quote {
+  position: relative;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+.quote-bar {
+  z-index: 100;
+  width: 100%;
+  position: relative;
+  background-color: #262e42;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 5px 5px 12px rgb(175 175 175);
+}
+.hiddenNav.hamburgerOpen .quote-bar {
+  box-shadow: none;
+  z-index: -1;
+}
+@media (orientation: landscape) and (max-width: 640px) {
+  .quote {
+    font-size: 15px;
+    padding: 2px 0px 2px 0px;
+}
+}
+@media screen and (max-width: 575.98px) {
+  .quote {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+  }
+}
+@media screen and (max-width: 375.98px) {
+  .quote {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+  }
+}
+@media screen and (max-width: 320.98px) {
+  .quote {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+  }
+}
+@media screen and (max-width: 240.98px) {
+  .quote {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 11px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+  }
+  .quote-bar {
+    box-shadow: 4px 2px 8px rgb(175 175 175);
+}
+}

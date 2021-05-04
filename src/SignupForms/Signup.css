@@ -1,0 +1,1399 @@
+.current {
+  color: red;
+}
+.labelup {
+  transform: translate(0, 0) !important;
+}
+.label1up {
+  transform: translate(0, 0) !important;
+}
+.is-danger.text-body {
+  animation: shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  background: url(//my-assets.netlify.com/codepen/dailyui-001/ico-invalid.svg)
+    center no-repeat;
+  border-bottom: 2px solid #f37b56;
+  box-shadow: none;
+  transform: translate3d(0, 0, 0);
+  border-color: #f37b56;
+  background-position: 96% 34%;
+}
+.help {
+  text-align: left;
+  font-size: 13px;
+  color: #f37b56;
+  font-weight: 700;
+  position: relative;
+  top: -10px;
+  margin-bottom: 0px;
+}
+.is-danger.text-small-uppercase {
+  color: #f37b56;
+}
+.error {
+  color: #f37b56;
+  font-size: 14px;
+  text-align: left;
+}
+
+.mainContent {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+}
+.nav-homeBtn-img {
+  width: 15vw;
+}
+/* main Left start */
+.mainLeft {
+  text-align: center;
+}
+.mainLeft img {
+  width: 65%;
+  position: relative;
+  margin: 0 auto;
+  object-fit: contain !important;
+  padding-right: 5rem;
+}
+.mainLeft p {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding-right: 5rem;
+}
+.mainLeftContent {
+  /*width: 90%;*/
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* main Left end */
+.middleLine {
+  border-right: 1px solid grey;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 50%;
+}
+/* mainRight start */
+.mainRight {
+  text-align: center;
+}
+
+.CreateAccountTitle h1 {
+  color: #57bb71;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.PersonalDetailsTitle h1 {
+  color: #57bb71;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.EducationalDetailsTitle h1 {
+  color: #57bb71;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.SignupCard {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 3% !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+
+.CreateAccountCheckbox {
+  margin-bottom: 2%;
+  margin: auto;
+  width: 75%;
+}
+
+.form-inputs {
+  margin-bottom: 3.5%;
+  width: 100%;
+}
+
+.MuiFormLabel-root {
+  color: #262e42 !important;
+  font-weight: 700 !important;
+}
+
+/* .MuiInput-underline:after {
+  border-bottom: 0.13rem solid #9b9b9b !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 0.13rem solid #57bb71 !important;
+} */
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #9b9b9b !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 2px solid #9b9b9b !important;
+}
+
+.MuiFormControl-root {
+  width: 75% !important;
+}
+
+.MuiButton-containedSecondary {
+  width: 75% !important;
+  background-color: #f37b56 !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 0.9rem !important;
+}
+
+.MuiButtonGroup-grouped {
+  min-width: 5% !important;
+}
+
+.MuiButton-text {
+  padding: 2.5% 12% !important;
+}
+
+hr {
+  color: black;
+  margin: 0.75rem 0;
+}
+
+.MuiButton-textPrimary {
+  color: #57bb71 !important;
+  font-weight: 700 !important;
+}
+
+.MuiButtonGroup-groupedTextPrimary:not(:last-child) {
+  border-color: #57bb71 !important;
+}
+
+.MuiButtonGroup-groupedTextHorizontal:not(:last-child) {
+  border-right: 2px solid rgba(87, 187, 113, 0.2) !important;
+}
+
+.back-button {
+  width: 35% !important;
+}
+
+.prev-button {
+  margin-right: 0.5% !important;
+}
+
+.sub-button {
+  margin-left: 0.5% !important;
+}
+.tncerror {
+  font-size: 10px;
+  color: red;
+}
+
+.text-small-uppercase {
+  color: #57bb71;
+  font-weight: 700;
+  float: left;
+  margin-left: 13%;
+  margin-bottom: 2%;
+}
+
+.edu_inputs {
+  /* margin-top:5%!important; */
+  margin-left: 1% !important;
+}
+
+.edu_board {
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: 2px solid rgb(87, 187, 113);
+  margin-right: 2.5rem;
+  margin-top: 3%;
+  cursor: pointer;
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+  text-align: center;
+  width: 18%;
+}
+.edu_board:hover {
+  background-color: rgb(87, 187, 113);
+  color: white;
+}
+.edu_board p {
+  margin: 0;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.loginCard {
+  width: 75%;
+  margin: 0 auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 3% !important;
+  background-color: #f9f9f9 !important;
+  border: none !important;
+  box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.022),
+    0 2.5px 5.3px rgba(0, 0, 0, 0.032), 0 4.8px 9.9px rgba(0, 0, 0, 0.04),
+    0 8.5px 17.6px rgba(0, 0, 0, 0.048), 0 15.9px 33px rgba(0, 0, 0, 0.058),
+    0 38px 79px rgba(0, 0, 0, 0.08);
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+}
+.card .title {
+  border-bottom: 0.2vh solid rgb(175, 175, 175);
+}
+.card .title h1 {
+  font-size: 50px;
+  color: #57bb71;
+  font-weight: 600;
+  padding: 1%;
+  margin-top: 1rem;
+}
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  text-align: left;
+}
+.inputs input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5vh;
+  font-size: 18px;
+  border: 0.1vw solid rgb(105, 105, 105);
+}
+
+.checkbox p {
+  margin: 0;
+  /*font-size: 20px;*/
+}
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.rememberBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rememberBox p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5%;
+}
+.hero .hr {
+  width: 30%;
+  border-top: 0.1vh solid rgb(161, 161, 161);
+  position: relative;
+}
+.hero p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.faceG img {
+  width: 12%;
+}
+.faceG img:last-of-type {
+  margin-left: 2%;
+}
+
+.faceG p {
+  font-size: 15px;
+}
+.blue {
+  color: #3fa7d6;
+  font-weight: 500;
+}
+.orLogin {
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.backBtn {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+  margin-right: 10px;
+}
+.backBtn:hover {
+  background-color: rgb(87, 187, 113);
+  color: white;
+}
+
+.CreateAccount-password-confirm {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.CreateAccount-password-confirm p {
+  text-align: left;
+}
+
+.CreateAccount-password-confirm input {
+  width: 95%;
+}
+.CreateAccount_submitDiv {
+  width: 74%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.CreateAccount_submitBtn {
+  width: 100%;
+  background-color: rgb(87, 187, 113);
+  border: 2px solid rgb(87, 187, 113);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 1.2vh;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s;
+}
+.CreateAccount_submitBtn:hover {
+  color: rgb(87, 187, 113);
+  background-color: transparent;
+}
+.CreatedAccount-half-inputs input {
+  padding: 13px;
+}
+
+/* //Personal Details 1 start */
+.personalDetails_1-inputs {
+  position: relative;
+}
+.personalDetails_1-loginBtnDiv {
+  display: flex;
+  color: #57bb71;
+  font: 700 1.5rem "Montserrat";
+  letter-spacing: 0.5rem;
+}
+.personalDetails_1-mobile_numbers_select {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  margin-left: 5%;
+  border: none;
+  font-size: 17px;
+}
+.personalDetails_1-inputs {
+  margin-bottom: 10%;
+}
+.personalDetails_1-mobile_numbers {
+  padding-left: 18% !important;
+}
+.EducationalDetails_class {
+  padding-top: 2%;
+}
+.EducationalDetails_class_select {
+  width: 100%;
+  font-size: 17px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #57bb71;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.EducationalDetails_class_remeberBox {
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.EducationalDetails_class_remeberBox p {
+  font-size: 18px;
+}
+.EducationalDetails_class_select_stateDiv {
+  width: 49%;
+}
+.EducationalDetails_class_select_state {
+  padding: 15px;
+  width: 100%;
+  font-size: 17px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #57bb71;
+  box-sizing: border-box;
+  outline: none;
+}
+.EducationalDetails_colorBlack {
+  color: black;
+}
+.confirmation-code {
+  margin-bottom: 10%;
+}
+.edu_checkbox p {
+  font-size: 15px !important;
+}
+.btn-group {
+  width: 80%;
+}
+
+.btn-group > button {
+  color: rgb(82, 28, 28);
+  font-weight: 500;
+}
+/* Breakpoints */
+@media screen and (min-width: 1400px) {
+  .nav-logo {
+    width: 250px;
+    height: auto;
+    padding-top: 0px;
+  }
+  .CreateAccountTitle h1 {
+    font-size: 60px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 60px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 50px;
+  }
+
+  .MuiButton-root {
+    font-size: 1.2rem !important;
+    margin-top: 10px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 25px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 23px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 19px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -5px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 17px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 15px !important;
+  }
+  .edu_text {
+    font-size: 23px !important;
+    /* margin-left: 5%; */
+    color: black;
+    font-weight: 500;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem !important;
+  }
+  .tncerror {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 1199.98px) and (max-width: 1399.98px) {
+  .CreateAccountTitle h1 {
+    font-size: 55px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 55px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 45px;
+  }
+
+  .PrivateSwitchBase-root-1 {
+    padding: 2px !important;
+  }
+  .MuiButton-root {
+    font-size: 1.2rem !important;
+    margin-top: 10px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 22px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 18px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -3px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 17px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 15px !important;
+  }
+  .edu_text {
+    font-size: 22px !important;
+    /* margin-left: 5%; */
+    color: black;
+    font-weight: 500;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem !important;
+  }
+  .tncerror {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 1.35rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1024.98px) and (max-width: 1199.98px) {
+  .mainLeft img {
+    width: 60% !important;
+    right: 15% !important;
+  }
+  .mainLeft p {
+    width: 60% !important;
+    margin-left: 5% !important;
+  }
+
+  .CreateAccountTitle h1 {
+    font-size: 50px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 50px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 36px;
+  }
+
+  .MuiButton-root {
+    font-size: 1rem !important;
+    margin-top: 8px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 20px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 18px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -1px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 15px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 12px !important;
+  }
+  .edu_text {
+    font-size: 20px !important;
+    /* margin-left: 5%; */
+    color: black;
+    font-weight: 500;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.9rem !important;
+  }
+  .tncerror {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 1.35rem;
+  }
+  .PrivateSwitchBase-root-1 {
+    padding: 2px !important;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .mainLeft {
+    display: none;
+  }
+  .middleLine {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768.98px) and (max-width: 1024.98px) {
+  .CreateAccountTitle h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 43px;
+    margin-bottom: 5px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .PrivateSwitchBase-root-1 {
+    padding: 3px !important;
+  }
+  .MuiButton-root {
+    font-size: 1rem !important;
+    margin-top: 8px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 12px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 15px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 13px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 1px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 12px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .edu_text {
+    font-size: 15px !important;
+    /* margin-left: 5%; */
+    color: black;
+    font-weight: 500;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.75rem !important;
+  }
+  .tncerror {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 768.98px) {
+  .CreateAccountTitle h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 46px;
+    margin-bottom: 5px;
+  }
+  .MuiButton-root {
+    font-size: 1.2rem !important;
+    margin-top: 8px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 12px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 20px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 18px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -2px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 16px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 14px !important;
+  }
+  .edu_text {
+    font-size: 20px !important;
+    /* margin-left: 5%; */
+    color: black;
+    font-weight: 500;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem !important;
+  }
+  .tncerror {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  /* .mainContent{
+    overflow: scroll;
+  } */
+}
+
+@media screen and (max-width: 625.98px) {
+  /* .nav-logo {
+    width: 180px;
+  } */
+  .hero p {
+    font-size: 14px !important;
+  }
+  .faceG p {
+    font-size: 14px !important;
+  }
+  .CreateAccountTitle h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .MuiButton-root {
+    font-size: 1rem !important;
+    margin-top: 8px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 8px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 18px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 16px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 1px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 15px !important;
+  }
+  .class-error {
+    font-size: 13px !important;
+  }
+  .board-error {
+    font-size: 13px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 12px !important;
+  }
+  .edu_text {
+    font-size: 18px !important;
+    /* margin-left: 5%; */
+    margin-top: 5%;
+    color: black;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.8rem !important;
+  }
+  .tncerror {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  /* .nav-logo {
+    width: 150px;
+    height: auto;
+    padding-top: 4px;
+  } */
+  .hero p {
+    font-size: 12px !important;
+  }
+  .faceG p {
+    font-size: 12px !important;
+  }
+  .PrivateSwitchBase-root-2 {
+    padding: 2px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.75em !important;
+    height: 0.75em !important;
+  }
+  .CreateAccountTitle h1 {
+    font-size: 35px;
+    margin-bottom: 3px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 35px;
+    margin-bottom: 3px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 35px;
+    margin-bottom: 3px;
+  }
+  .SignupCard {
+    width: 85% !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 4px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 16px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 15px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 5px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 12px !important;
+  }
+  .class-error {
+    font-size: 12px !important;
+  }
+  .board-error {
+    font-size: 12px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .MuiButton-root {
+    margin-top: 6px !important;
+  }
+  .edu_text {
+    font-size: 18px !important;
+    /* margin-left: 5%; */
+    color: black;
+    margin-top: 5%;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.75rem !important;
+  }
+  .tncerror {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450.98px) {
+  .CreateAccountTitle h1 {
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 29px;
+    margin-bottom: 3px;
+  }
+  .MuiFormLabel-root {
+    font-size: 15px !important;
+  }
+  .edu_text {
+    font-size: 0.7rem !important;
+    margin-left: 10%;
+  }
+  .edu_inputs {
+    margin-left: 0;
+  }
+  .makeStyles-formControl-23 {
+    margin: 5px !important;
+    min-width: 150px !important;
+  }
+  .MuiButton-root {
+    font-size: 0.7rem !important;
+    margin-top: 6px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.65em !important;
+    height: 0.65em !important;
+  }
+  .btn-group {
+    margin-left: -29px !important;
+  }
+  .btn {
+    font-size: 1rem !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 3px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 13px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 7px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  /* .MuiButtonBase-root {
+    margin-top: 0 !important;
+  } */
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 11px !important;
+  }
+  .class-error {
+    font-size: 11px !important;
+  }
+  .board-error {
+    font-size: 11px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .edu_text {
+    font-size: 15px !important;
+    /* margin-left: 5%; */
+    color: black;
+    margin-top: 5%;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.65rem !important;
+  }
+  .PrivateSwitchBase-root-1 {
+    padding: 2px !important;
+  }
+  .CreateAccountCheckbox {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  /* .nav-logo {
+    width: 130px;
+    height: auto;
+    margin-top: 4px;
+  } */
+
+  .tncerror {
+    font-size: 11px;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.55rem !important;
+  }
+  .PrivateSwitchBase-root-2 {
+    padding: 1px !important;
+  }
+  .PrivateSwitchBase-root-1 {
+    padding: 2px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.6em !important;
+    height: 0.6em !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 13px !important;
+  }
+  .faceG p {
+    font-size: 10px !important;
+  }
+  .hero p {
+    font-size: 10px !important;
+  }
+  .MuiFormControl-root {
+    width: 90% !important;
+  }
+  .makeStyles-formControl-7 {
+    margin: 3px !important;
+    min-width: 125px !important;
+  }
+  .CreateAccountTitle h1 {
+    font-size: 27px;
+    margin-bottom: 2px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 27px;
+    margin-bottom: 2px;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 26px;
+    margin-bottom: 2px;
+  }
+  .SignupCard {
+    width: 90% !important;
+  }
+  /* .checkbox {
+    width: 80%;
+  } */
+  .btn-group {
+    margin-left: -40px !important;
+  }
+  .MuiButtonGroup-grouped {
+    min-width: 4% !important;
+  }
+  .MuiButton-containedSecondary {
+    color: #fff;
+    /* margin-top: 15px !important; */
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: -2px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 13px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 7px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  /* .MuiButtonBase-root {
+  margin-top: 5px !important;
+} */
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 11px !important;
+  }
+  .class-error {
+    font-size: 10px !important;
+  }
+  .board-error {
+    font-size: 10px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .edu_text {
+    font-size: 13px !important;
+    margin-left: 5%;
+    margin-top: 5%;
+    color: black;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320.98px) {
+  /* .nav-logo {
+    width: 130px;
+    height: auto;
+    margin-top: 0px;
+  } */
+  .hero p {
+    font-size: 10px !important;
+  }
+  .faceG p {
+    font-size: 10px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 8.5px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .PrivateSwitchBase-root-2 {
+    padding: 1px !important;
+  }
+  .PrivateSwitchBase-root-1 {
+    padding: 1px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.5em !important;
+    height: 0.5em !important;
+  }
+  .MuiCardContent-root {
+    padding: 16px;
+    /* border: 2px solid #9b9b9b ; */
+  }
+  .MuiTypography-body1 {
+    font-size: 0.5rem !important;
+  }
+  .edu_text {
+    font-size: 0.75rem !important;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+  .edu_inputs {
+    margin-left: 0;
+  }
+  .MuiButton-root {
+    font-size: 0.65rem !important;
+    margin-top: 0 !important;
+  }
+  .makeStyles-formControl-23 {
+    margin: 3px !important;
+    min-width: 125px !important;
+  }
+  .MuiFormControl-root {
+    width: 95% !important;
+  }
+  .CreateAccountTitle h1 {
+    font-size: 22.3px;
+    margin-bottom: 2px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 1.3rem;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 1.1rem;
+  }
+  .orLogin {
+    display: none;
+  }
+  .btn-group {
+    margin-left: -50px !important;
+  }
+  .btn {
+    font-size: 0.8rem !important;
+    margin-top: 2px;
+  }
+  .MuiButton-containedSecondary {
+    color: #fff;
+    /* margin-top: 3px !important; */
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 10px !important;
+  }
+  .class-error {
+    font-size: 10px !important;
+  }
+  .board-error {
+    font-size: 10px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 12px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 12px !important;
+  }
+  .next-button {
+    margin-top: 15px !important;
+  }
+  .form-inputs {
+    margin-bottom: 2px !important;
+    width: 100%;
+  }
+  .doublebuttons {
+    margin-top: 11px;
+  }
+  .tncerror {
+    font-size: 10px;
+    color: red;
+  }
+  .CreateAccountCheckbox {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 240.98px) {
+  .nav-logo {
+    width: 110px;
+    height: auto;
+    margin-top: -6px;
+  }
+
+  .makeStyles-formControl-11 {
+    margin-top: 0 !important;
+  }
+  .makeStyles-formControl-9 {
+    margin-top: 0 !important;
+  }
+  .makeStyles-formControl-15 {
+    margin-top: 0 !important;
+    min-width: 140px !important;
+  }
+
+  .class-error {
+    font-size: 7px !important;
+  }
+  .board-error {
+    font-size: 7px !important;
+  }
+
+  .next-button {
+    margin-top: 11px !important;
+  }
+  .CreateAccountCheckbox {
+    margin: auto;
+    width: 90%;
+  }
+
+  .btn-group {
+    width: 90%;
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+    margin-left: -30px !important;
+  }
+  .btn {
+    font-size: 0.7rem !important;
+    margin-top: 14px;
+  }
+  .MuiButton-containedSecondary {
+    color: #fff;
+    /* margin-top: 3px !important; */
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: -5px !important;
+  }
+  .MuiCardContent-root {
+    padding: 0 !important;
+    padding-top: 3rem !important;
+  }
+  .MuiCardContent-root:last-child {
+    padding: 0 !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.8rem !important;
+    padding-right: 0.4rem !important;
+    padding-left: 0.4rem !important;
+    /* margin-top: 30px !important; */
+  }
+  .MuiFormLabel-root {
+    font-size: 11px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 8px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.35rem !important;
+  }
+  .MuiButton-root {
+    padding: 2px 5px !important;
+    /* margin-top: 5px !important; */
+  }
+  .form-inputs {
+    margin-bottom: 0 !important;
+  }
+  .CreateAccountTitle h1 {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  .PersonalDetailsTitle h1 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .EducationalDetailsTitle h1 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .MuiInputBase-input {
+    padding-top: 5px !important;
+    font-size: 10px !important;
+  }
+
+  .makeStyles-formControl-7 {
+    margin: 1px !important;
+  }
+  .edu_text {
+    font-size: 0.7rem !important;
+    padding-top: 5% !important;
+    margin-left: 3% !important;
+    margin-top: 5% !important;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 7px !important;
+  }
+  .MuiInput-underline:after {
+    border-bottom: 1px solid #9b9b9b !important;
+  }
+
+  .MuiSvgIcon-root {
+    width: 0.4em !important;
+    height: 0.4em !important;
+  }
+  .MuiInput-underline:before {
+    border-bottom: 1px solid #9b9b9b !important;
+  }
+  .tncerror {
+    font-size: 7px;
+    color: red;
+    margin-bottom: -12px;
+  }
+  /* .MuiFormControlLabel-root {
+    margin-top: 2px;
+} */
+  .doublebuttons {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}

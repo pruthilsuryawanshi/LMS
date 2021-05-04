@@ -1,0 +1,239 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+h3 {
+  color: #111;
+  font-weight: 400;
+}
+.is-danger.form-control {
+  width: 100%;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.LoginCheckbox {
+  margin: 2%;
+}
+.checkdetails {
+  margin: auto;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-pass:hover {
+  text-decoration: underline;
+}
+.helper {
+  text-align: left;
+  font-size: 13px;
+  color: #f37b56;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+.error {
+  color: #f37b56;
+  font-size: 14px;
+  text-align: left;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #04a9f5;
+  border-color: #04a9f5;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #038fcf;
+  border-color: #0386c3;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mb-4 {
+  margin-bottom: 0.7rem !important;
+}
+.check {
+  padding-left: 0.4rem;
+  padding-bottom: 1rem;
+}
+
+.auth-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100vh;
+}
+.auth-wrapper a,
+.auth-wrapper p > a {
+  color: #111;
+  font-weight: 600;
+}
+.auth-wrapper .btn-auth-gen .btn-icon {
+  width: 140px;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 45px;
+}
+.auth-wrapper .btn-auth-gen .btn-icon small {
+  font-size: 15px;
+}
+.auth-wrapper .input-group {
+  background: transparent;
+}
+.auth-wrapper .card {
+  margin-bottom: 0;
+}
+.auth-wrapper > div {
+  z-index: 5;
+}
+.auth-wrapper .auth-content {
+  position: relative;
+  width: 390px;
+  padding: 15px;
+  z-index: 5;
+}
+.auth-wrapper .auth-content.multyform,
+.auth-wrapper .auth-content.subscribe {
+  width: 750px;
+}
+@media only screen and (max-width: 768px) {
+  .auth-wrapper {
+    max-width: 360px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .auth-wrapper .card .card-body {
+    padding: 30px 15px;
+  }
+}
+.auth-wrapper .auth-icon {
+  margin-top: 1.5rem;
+  font-size: 30px;
+}
+
+.auth-wrapper.offline {
+  background-image: none;
+}
+.auth-wrapper.offline:before {
+  display: none;
+}
+.auth-wrapper .auth-bg .r {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: rotateOutLeftDown;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+.auth-wrapper .auth-bg .r:first-child {
+  top: -180px;
+  right: -100px;
+  background: linear-gradient(-135deg, #1de9b6 0%, #1dc4e9 100%);
+}
+.auth-wrapper .auth-bg .r:last-child {
+  left: -100px;
+  bottom: -150px;
+  background: linear-gradient(-135deg, #899fd4 0%, #a389d4 100%);
+}
+.auth-wrapper .auth-bg .r.s {
+  width: 20px;
+  height: 20px;
+}
+.auth-wrapper .auth-bg .r.s:nth-child(2) {
+  top: 59px;
+  right: -150px;
+  background: #04a9f5;
+}
+.auth-wrapper .auth-bg .r.s:nth-child(3) {
+  left: -150px;
+  bottom: 79px;
+  background: #1de9b6;
+}
+
+.custom-select,
+.form-control {
+  background: #f4f7fa;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.custom-select:focus,
+.form-control:focus {
+  background: #f4f7fa;
+}
+.custom-select::-moz-placeholder,
+.form-control::-moz-placeholder {
+  color: #aaaeb3;
+  opacity: 1;
+}
+.custom-select:-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+  color: #aaaeb3;
+}
+.custom-select::-webkit-input-placeholder,
+.form-control::-webkit-input-placeholder {
+  color: #aaaeb3;
+}
+
+/* input group start */
+.input-group {
+  background: #fff;
+}
+.input-group .input-group-text {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: transparent;
+}
+.input-group .input-group-text i {
+  font-size: 20px;
+}
+.input-group .custom-file-label {
+  margin-bottom: 0;
+}
+.input-group .btn {
+  margin-bottom: 0;
+  margin-right: 0;
+}

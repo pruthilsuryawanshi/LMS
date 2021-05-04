@@ -1,0 +1,832 @@
+body button,
+input {
+  outline: none !important;
+}
+.labelup {
+  transform: translate(0, 0) !important;
+}
+.label1up {
+  transform: translate(0, 0) !important;
+}
+.is-danger.loginInput.text-body {
+  animation: shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  background: url(//my-assets.netlify.com/codepen/dailyui-001/ico-invalid.svg)
+    center no-repeat;
+  border-bottom: 2px solid #f37b56;
+  box-shadow: none;
+  transform: translate3d(0, 0, 0);
+  border-color: #f37b56;
+  background-position: 96% 34%;
+}
+.help {
+  text-align: left;
+  font-size: 13px;
+  color: #f37b56;
+  font-weight: 700;
+}
+.is-danger.text-small-uppercase-login.loginLabel {
+  color: #f37b56;
+}
+.error {
+  color: #f37b56;
+  font-size: 14px;
+  text-align: left;
+}
+/* navbar start */
+
+/* navbar end */
+.overlay {
+  width: 100%;
+  object-fit: contain;
+  /* background-image: url("../../public/Images/Overlay\ Shapes.png"); */
+  /* background-color: rgb(87, 187, 113, 0.15); */
+}
+.overlayImg {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+}
+
+.nav-homeBtn-img {
+  width: 15vw;
+}
+/* main Left start */
+.mainLeftLogin {
+  text-align: center;
+}
+.mainLeftLogin img {
+  width: 65%;
+  position: relative;
+  margin: 0 auto;
+  object-fit: contain !important;
+  padding-right: 5rem;
+}
+.mainLeftLogin p {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding-right: 5rem;
+}
+.mainLeftContentLogin {
+  /*width: 90%;*/
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* main Left end */
+.middleLineLogin {
+  border-right: 1px solid grey;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 50%;
+}
+/* mainRightLoginstart */
+.mainRightLogin {
+  text-align: center;
+}
+
+.LoginTitle h1 {
+  color: #57bb71;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.LoginCard {
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 3% !important;
+  border: none !important;
+  background: transparent !important;
+  /* box-shadow: 0 1.1px 2.2px rgba(0, 0, 0, 0.022),
+    0 2.5px 5.3px rgba(0, 0, 0, 0.032), 0 4.8px 9.9px rgba(0, 0, 0, 0.04),
+    0 8.5px 17.6px rgba(0, 0, 0, 0.048), 0 15.9px 33px rgba(0, 0, 0, 0.058),
+    0 38px 79px rgba(0, 0, 0, 0.08); */
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+}
+
+.LoginCheckbox {
+  margin: 2%;
+}
+
+.form-inputs {
+  margin-bottom: 3.5%;
+  width: 100%;
+}
+
+.MuiFormLabel-root {
+  color: #57bb71 !important;
+  font-weight: 700 !important;
+}
+
+/* .MuiInput-underline:after {
+  border-bottom: 2px solid #57bb71 !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 2px solid #57bb71 !important;
+} */
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #9b9b9b !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 2px solid #9b9b9b !important;
+}
+
+.MuiFormControl-root {
+  width: 75% !important;
+}
+
+.MuiButton-containedSecondary {
+  width: 75% !important;
+  background-color: #f37b56 !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 0.9rem !important;
+}
+
+hr {
+  color: black;
+  margin: 0.75rem 0;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5%;
+}
+.hero .hr {
+  width: 30%;
+  border-top: 0.1vh solid rgb(161, 161, 161);
+  position: relative;
+}
+.hero p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.faceG img {
+  width: 12%;
+}
+.faceG img:last-of-type {
+  margin-left: 2%;
+}
+
+.faceG p {
+  font-size: 15px;
+}
+.blue {
+  color: #3fa7d6;
+  font-weight: 500;
+}
+.orLogin {
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.checkbox {
+  width: 73%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6%;
+  margin-bottom: 2.5%;
+}
+
+/* Breakpoints */
+@media screen and (min-width: 1400px) {
+  .nav-logo {
+    width: 250px;
+    height: auto;
+    padding-top: 0px;
+  }
+  .LoginTitle h1 {
+    font-size: 65px;
+  }
+  .MuiButton-root {
+    font-size: 1.2rem !important;
+  }
+  .MuiSvgIcon-root {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 25px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 23px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 19px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -5px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 17px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 15px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem !important;
+  }
+  .forget-password {
+    font-size: 1rem !important;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1199.98px) and (max-width: 1399.98px) {
+  .LoginTitle h1 {
+    font-size: 60px;
+  }
+
+  .MuiButton-root {
+    font-size: 1.2rem !important;
+  }
+  .MuiSvgIcon-root {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 22px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 18px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -3px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 17px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 15px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem !important;
+  }
+  .forget-password {
+    font-size: 1rem !important;
+  }
+  .btn {
+    font-size: 1.35rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1024.98px) and (max-width: 1199.98px) {
+  .mainLeftLogin img {
+    width: 60% !important;
+    right: 15% !important;
+  }
+  .mainLeftLogin p {
+    width: 60% !important;
+    margin-left: 5% !important;
+    font-size: 0.96rem;
+  }
+
+  .LoginTitle h1 {
+    font-size: 60px;
+  }
+
+  .MuiButton-root {
+    font-size: 1rem !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 20px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 18px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -1px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 15px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 12px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.9rem !important;
+  }
+  .forget-password {
+    font-size: 0.8rem !important;
+  }
+  .tncerror {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 1.35rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+
+  .checkbox input {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .mainLeftLogin {
+    display: none;
+  }
+  .middleLineLogin {
+    display: none;
+  }
+}
+@media screen and (min-width: 768.98px) and (max-width: 1024.98px) {
+  .LoginTitle h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+  }
+  .MuiButton-root {
+    font-size: 1rem !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 12px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 15px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 13px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 1px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 12px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .forget-password {
+    font-size: 0.75rem !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.75rem !important;
+  }
+  .tncerror {
+    font-size: 10px;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .mainContent {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+
+  .checkbox input {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+@media screen and (max-width: 768.98px) {
+  .LoginTitle h1 {
+    font-size: 55px;
+    margin-bottom: 5px;
+  }
+  .MuiButton-root {
+    font-size: 1.2rem !important;
+  }
+  .MuiSvgIcon-root {
+    width: 1em !important;
+    height: 1em !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 12px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 20px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 18px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, -2px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 16px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 14px !important;
+  }
+  .forget-password {
+    font-size: 1rem !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem !important;
+  }
+  .tncerror {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+  /* .mainContent{
+    overflow: scroll;
+  } */
+}
+
+@media screen and (max-width: 625.98px) {
+  .nav-logo {
+    width: 180px;
+  }
+  .hero p {
+    font-size: 15px !important;
+  }
+  .faceG p {
+    font-size: 17px !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 8px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 18px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 16px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 1px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 15px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 12px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.8rem !important;
+  }
+  .forget-password {
+    font-size: 0.8rem !important;
+  }
+  .tncerror {
+    font-size: 12px;
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+
+  .checkbox input {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .nav-logo {
+    width: 150px;
+    height: auto;
+    padding-top: 4px;
+  }
+  .hero p {
+    font-size: 12px !important;
+  }
+  .faceG p {
+    font-size: 12px !important;
+  }
+  .forget-password {
+    font-size: 0.75rem !important;
+  }
+  .PrivateSwitchBase-root-2 {
+    padding: 2px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.75em !important;
+    height: 0.75em !important;
+  }
+  .LoginCard {
+    width: 85% !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 4px !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 16px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 15px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 5px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 12px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.75rem !important;
+  }
+  .checkbox {
+    /* width: 80%; */
+    margin-top: 20px;
+  }
+
+  .checkbox input {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+@media screen and (max-width: 450.98px) {
+  .LoginTitle h1 {
+    font-size: 3rem;
+  }
+  .MuiFormLabel-root {
+    font-size: 15px !important;
+  }
+  .makeStyles-formControl-23 {
+    margin: 5px !important;
+    min-width: 150px !important;
+  }
+  .MuiButton-root {
+    font-size: 0.7rem !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.65em !important;
+    height: 0.65em !important;
+  }
+  .btn-group {
+    margin-left: -29px !important;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: 3px !important;
+  }
+  .MuiInputBase-input {
+    padding: 5px 0 !important;
+    font-size: 13px !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 7px) scale(0.75) !important;
+    transform-origin: top left;
+  }
+  /* .MuiButtonBase-root {
+    margin-top: 0 !important;
+  } */
+  .MuiFormHelperText-root.Mui-error {
+    color: #f44336;
+    font-size: 11px !important;
+  }
+  .MuiFormHelperText-root {
+    font-size: 10px !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.65rem !important;
+  }
+  .forget-password {
+    font-size: 0.65rem !important;
+  }
+  .checkbox {
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .checkbox input {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .nav-logo {
+    width: 130px;
+    height: auto;
+    margin-top: 4px;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.6rem !important;
+  }
+  .forget-password {
+    font-size: 0.6rem !important;
+  }
+  .PrivateSwitchBase-root-2 {
+    padding: 1.5px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.5em !important;
+    height: 0.5em !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 0.75rem !important;
+  }
+  .LoginTitle h1 {
+    font-size: 2.5rem;
+  }
+  .LoginCard {
+    width: 90% !important;
+  }
+  .faceG p {
+    font-size: 10px !important;
+  }
+  .hero p {
+    font-size: 10px !important;
+  }
+  .MuiFormControl-root {
+    width: 85% !important;
+  }
+  .checkbox {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  .checkbox input {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+@media screen and (max-width: 320.98px) {
+  .nav-logo {
+    width: 130px;
+    height: auto;
+    margin-top: 0px;
+  }
+  .hero p {
+    font-size: 10px !important;
+  }
+  .faceG p {
+    font-size: 10px !important;
+  }
+  /* .MuiTypography-body1 {
+    font-size: 1.7vw!important;
+  }
+  .forget-password {
+    font-size: 1.7vw!important;
+  } */
+  .PrivateSwitchBase-root-2 {
+    padding: 1px !important;
+  }
+  .MuiSvgIcon-root {
+    width: 0.4em !important;
+    height: 0.4em !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 0.7rem !important;
+  }
+
+  .MuiTypography-body1 {
+    font-size: 0.5rem !important;
+  }
+  .forget-password {
+    font-size: 0.5rem !important;
+  }
+
+  .checkbox {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .checkbox input {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  /* .orLogin {
+  display: none;
+} */
+}
+@media screen and (max-width: 240.98px) {
+  /* .nav-logo {
+    width: 110px;
+    height: auto;
+    margin-top: 0px;
+  } */
+  .LoginTitle h1 {
+    font-size: 1.2rem;
+  }
+  hr {
+    margin: 0 !important;
+    margin-bottom: -1rem !important;
+  }
+  .MuiCardContent-root {
+    padding: 0 !important;
+    padding-top: 3rem !important;
+  }
+  .MuiCardContent-root:last-child {
+    padding: 0 !important;
+    padding-top: 3rem !important;
+  }
+  .MuiFormLabel-root {
+    font-size: 0.5rem !important;
+  }
+  .MuiInputLabel-shrink {
+    transform: translate(0, 15px) scale(0.75) !important;
+  }
+  .MuiTypography-body1 {
+    font-size: 0.25rem !important;
+  }
+  .forget-password {
+    font-size: 0.25rem !important;
+  }
+  .MuiButton-root {
+    padding: 2px 5px !important;
+  }
+  .form-inputs {
+    margin-bottom: 0 !important;
+  }
+  .checkbox {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .checkbox input {
+    width: 8px !important;
+    height: 8px !important;
+  }
+}
