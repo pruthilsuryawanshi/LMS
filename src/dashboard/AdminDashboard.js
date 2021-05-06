@@ -144,9 +144,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AdminDashboard() {
   const [screen, setScreen] = useState(false);
-
+  const [search, setSearch] = useState(false);
   const Screen = () => {
     setScreen(!screen);
+  };
+  const Search = () => {
+    setSearch(!search);
   };
   const classes = useStyles();
   const theme = useTheme();
@@ -277,8 +280,33 @@ export default function AdminDashboard() {
               >
                 <MenuIcon />
               </IconButton>
+
               <div className="appBar__links">
-                <SearchIcon color="#fff" fontSize="medium" />
+                {!search && (
+                  <SearchIcon
+                    color="#fff"
+                    fontSize="medium"
+                    onClick={Search}
+                    style={{ cursor: "pointer" }}
+                  />
+                )}
+                {search && (
+                  <div className="search">
+                    <input
+                      type="text"
+                      className="form-control border-0 shadow-none"
+                      placeholder="Search here"
+                    />
+                    <button
+                      type="button"
+                      className="close"
+                      aria-label="Close"
+                      onClick={() => setSearch(false)}
+                    >
+                      <span aria-hidden="true">x</span>
+                    </button>
+                  </div>
+                )}
                 {!screen && (
                   <FullscreenIcon
                     className="screen"
