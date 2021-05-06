@@ -3,17 +3,13 @@ import { Link } from "react-router-dom";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import { withStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import IconButton from "@material-ui/core/IconButton";
-import { makeStyles } from "@material-ui/core/styles";
-
 import "./Signup.css";
 import axios from "axios";
-import { Input } from "@material-ui/core";
 
 const CreateAccount = ({ nextStep, details, editDetails }) => {
   const [email, setEmail] = useState(details.email);
@@ -153,7 +149,7 @@ const CreateAccount = ({ nextStep, details, editDetails }) => {
             <h1>Create Account</h1>
           </div>
           <hr class="top-hr"></hr>
-          <form> 
+          <form>
             <div className="form-inputs">
               <TextField
                 error
@@ -237,16 +233,14 @@ const CreateAccount = ({ nextStep, details, editDetails }) => {
             </div>
 
             <div className="next-button">
-              <Link to="/personaldetails">
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  type="submit"
-                  onClick={handleNext}
-                >
-                  Next
-                </Button>
-              </Link>
+              <Button
+                variant="contained"
+                color="secondary"
+                type="submit"
+                onClick={handleNext}
+              >
+                Next
+              </Button>
             </div>
           </form>
 

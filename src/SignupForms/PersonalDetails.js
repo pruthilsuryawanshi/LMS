@@ -4,11 +4,8 @@ import { useState } from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-
 import { withStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
 import "./Signup.css";
 
 const PersonalDetails = ({ nextStep, previousStep, details, editDetails }) => {
@@ -23,7 +20,7 @@ const PersonalDetails = ({ nextStep, previousStep, details, editDetails }) => {
     if (
       validateFirstName(firstName) === null &&
       validateLastName(lastName) === null &&
-      validatePhoneNumber(phoneNumber) === null 
+      validatePhoneNumber(phoneNumber) === null
     ) {
       nextStep();
       const temp = {
@@ -172,36 +169,33 @@ const PersonalDetails = ({ nextStep, previousStep, details, editDetails }) => {
                 }
                     label="I agree to the Terms & Conditions"
               /> */}
-              {/* <FormHelperText> */}
-              {/* {isChecked && (
+            {/* <FormHelperText> */}
+            {/* {isChecked && (
                 <p className="tncerror">
                   Please agree to the Terms & Conditions
                 </p>
               )} */}
-              {/* </FormHelperText> */}
+            {/* </FormHelperText> */}
             {/* </div> */}
 
             <div className="doublebuttons">
-              <Link to="">
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  onClick={handlePrev}
-                  className="back-button prev-button"
-                >
-                  Back
-                </Button>
-              </Link>
-              <Link to="/educationaldetails">
-                <Button
-                  variant="contained"
-                  color="secondary"
-                  className="back-button sub-button"
-                  onClick={handleNext}
-                >
-                  Next
-                </Button>
-              </Link>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={handlePrev}
+                className="back-button prev-button"
+              >
+                Back
+              </Button>
+
+              <Button
+                variant="contained"
+                color="secondary"
+                className="back-button sub-button"
+                onClick={handleNext}
+              >
+                Next
+              </Button>
             </div>
           </form>
 

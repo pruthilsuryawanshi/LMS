@@ -73,7 +73,8 @@ const Login = () => {
       },
       "& .MuiInput-underline:before": {
         borderBottomColor: " #57bb71",
-      },
+      }
+      
     },
   })(TextField);
 
@@ -136,7 +137,7 @@ const Login = () => {
               <hr class="top-hr"></hr>
               <form>
                 <div className="form-inputs">
-                  <CssTextField
+                  <TextField
                     id="email"
                     name="email"
                     value={email}
@@ -144,7 +145,7 @@ const Login = () => {
                     onBlur={() =>  setFirst(true)}  onFocus={()=> setFirst(false)}
                     onChange={(e)=>  setEmail(e.target.value)}
                     label="Email"
-                    style={{ color: "#57bb71" }}
+                    style={{ color: "#57bb71"}}
                   />
                 </div>
 

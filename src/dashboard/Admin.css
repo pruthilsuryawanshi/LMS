@@ -1,12 +1,8 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
 h3 {
   color: #111;
   font-weight: 400;
 }
+
 .is-danger.form-control {
   width: 100%;
 }
@@ -17,6 +13,13 @@ h3 {
   align-items: stretch;
   width: 100%;
 }
+.input-group input {
+  text-indent: 1rem;
+}
+.input-group span {
+  font-size: 0.7rem !important;
+}
+
 .LoginCheckbox {
   margin: 2%;
 }

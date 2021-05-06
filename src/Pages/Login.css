@@ -1,6 +1,7 @@
 body button,
 input {
   outline: none !important;
+  text-indent: 0rem;
 }
 .labelup {
   transform: translate(0, 0) !important;

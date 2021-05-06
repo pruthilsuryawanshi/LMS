@@ -64,13 +64,13 @@ const AdminLogin = () => {
       '& .MuiInput-underline:before': {
         borderBottomColor: ' #57bb71',
       },
+      input:{
+        textIndent:'1rem'
+      }
     },
   })(TextField);
 
-  const [values, setValues] = React.useState({
-    password: password,
-    showPassword: false,
-  });
+ 
  
   return (
 
@@ -124,7 +124,7 @@ const AdminLogin = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
             id="password"
-            style={{backgroundColor:'#fff',textIndent:'30px'}}
+            style={{backgroundColor:'#fff',textIndent:'1rem'}}
             
           />
             </div>
@@ -144,7 +144,7 @@ const AdminLogin = () => {
             />
           
       </div>
-          <Link to="/forgotPassword">
+          <Link to="/forgotpassword">
           <h6 class="blue forget-password forgot-pass" style={{ fontSize: '1rem' }}>Forgot Password?</h6></Link>
         </div>
 

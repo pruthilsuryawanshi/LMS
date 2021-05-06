@@ -335,11 +335,9 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import InputLabel from "@material-ui/core/InputLabel";
 import { makeStyles } from "@material-ui/core/styles";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
 import axios from "axios";
 
 import "./Signup.css";
-import { FormatListBulleted } from "@material-ui/icons";
 import FormHelperText from "@material-ui/core/FormHelperText";
 const EducationalDetails = ({ previousStep, details, editDetails }) => {
   const [board, setBoard] = useState(details.educationalBoard);
@@ -427,110 +425,115 @@ const EducationalDetails = ({ previousStep, details, editDetails }) => {
         <hr class="top-hr"></hr>
         <form>
           <div>
-
-            
             <div>
               <label htmlFor="board" class="text-small-uppercase edu_text">
                 Select your Board
               </label>
             </div>
 
-          <div className="btn-group" role="group" aria-label="..." id="Rating">
-            <button
-              type="button"
-              className={`btn shadow-none ${isCbse ? "btn-success" : ""}`}
-              onClick={() => {
-                setBoard("CBSE");
-                setCbse(true);
-                setIcse(false);
-                setIsState(false);
-              }}
+            <div
+              className="btn-group"
+              role="group"
+              aria-label="..."
+              id="Rating"
             >
-              CBSE
-            </button>
-            <button
-              type="button"
-              className={`btn shadow-none ${isIcse ? "btn-success" : ""}`}
-              onClick={() => {
-                setBoard("ICSE");
-                setCbse(false);
-                setIcse(true);
-                setIsState(false);
-              }}
-            >
-              ICSE
-            </button>
-            <button
-              type="button"
-              className={`btn shadow-none ${isState ? "btn-success" : ""}`}
-              onClick={() => {
-                setBoard("State");
-                setCbse(false);
-                setIcse(false);
-                setIsState(true);
-              }}
-            >
-              STATE
-            </button>
-          </div>
-          {isBoard && (
-            <p class='board-error'
-              style={{
-                color: "red",
-                fontSize: "15px",
-                marginBottom: "0px",
-                marginTop: "5px",
-              }}
-            >
-              *Please select the board
-            </p>
-          )}
+              <button
+                type="button"
+                className={`btn shadow-none ${isCbse ? "btn-success" : ""}`}
+                onClick={() => {
+                  setBoard("CBSE");
+                  setCbse(true);
+                  setIcse(false);
+                  setIsState(false);
+                }}
+              >
+                CBSE
+              </button>
+              <button
+                type="button"
+                className={`btn shadow-none ${isIcse ? "btn-success" : ""}`}
+                onClick={() => {
+                  setBoard("ICSE");
+                  setCbse(false);
+                  setIcse(true);
+                  setIsState(false);
+                }}
+              >
+                ICSE
+              </button>
+              <button
+                type="button"
+                className={`btn shadow-none ${isState ? "btn-success" : ""}`}
+                onClick={() => {
+                  setBoard("State");
+                  setCbse(false);
+                  setIcse(false);
+                  setIsState(true);
+                }}
+              >
+                STATE
+              </button>
+            </div>
+            {isBoard && (
+              <p
+                class="board-error"
+                style={{
+                  color: "red",
+                  fontSize: "15px",
+                  marginBottom: "0px",
+                  marginTop: "5px",
+                }}
+              >
+                *Please select the board
+              </p>
+            )}
 
-          <div>
-            <div className="class-state">
-              <div className="input-field class-input">
-                <FormControl className={classes.formControl}>
-                  <InputLabel id="class-select-label">
-                    Select your Class
-                  </InputLabel>
-                  <Select
-                    labelId="class-select-label"
-                    id="class-select"
-                    value={standard}
-                    onChange={(e) => {
-                      setStandard(e.target.value);
-                      setIsStandard(false);
-                    }}
-                  >
-                    <MenuItem value={1}>1st</MenuItem>
-                    <MenuItem value={2}>2nd</MenuItem>
-                    <MenuItem value={3}>3rd</MenuItem>
-                    <MenuItem value={4}>4rth</MenuItem>
-                    <MenuItem value={5}>5th</MenuItem>
-                    <MenuItem value={6}>6th</MenuItem>
-                    <MenuItem value={7}>7th</MenuItem>
-                    <MenuItem value={8}>8th</MenuItem>
-                    <MenuItem value={9}>9th</MenuItem>
-                    <MenuItem value={10}>10th</MenuItem>
-                    <MenuItem value={11}>11th</MenuItem>
-                    <MenuItem value={12}>12th</MenuItem>
-                  </Select>
-                  <FormHelperText>
-                    {isStandard && (
-                      <p class='class-error'
-                        style={{
-                          color: "red",
-                          fontSize: "15px",
-                          marginBottom: "0px",
-                          marginTop: "5px",
-                        }}
-                      >
-                        *Please select the Class
-                      </p>
-                    )}
-                  </FormHelperText>
-                </FormControl>
-              </div>
+            <div>
+              <div className="class-state">
+                <div className="input-field class-input">
+                  <FormControl className={classes.formControl}>
+                    <InputLabel id="class-select-label">
+                      Select your Class
+                    </InputLabel>
+                    <Select
+                      labelId="class-select-label"
+                      id="class-select"
+                      value={standard}
+                      onChange={(e) => {
+                        setStandard(e.target.value);
+                        setIsStandard(false);
+                      }}
+                    >
+                      <MenuItem value={1}>1st</MenuItem>
+                      <MenuItem value={2}>2nd</MenuItem>
+                      <MenuItem value={3}>3rd</MenuItem>
+                      <MenuItem value={4}>4rth</MenuItem>
+                      <MenuItem value={5}>5th</MenuItem>
+                      <MenuItem value={6}>6th</MenuItem>
+                      <MenuItem value={7}>7th</MenuItem>
+                      <MenuItem value={8}>8th</MenuItem>
+                      <MenuItem value={9}>9th</MenuItem>
+                      <MenuItem value={10}>10th</MenuItem>
+                      <MenuItem value={11}>11th</MenuItem>
+                      <MenuItem value={12}>12th</MenuItem>
+                    </Select>
+                    <FormHelperText>
+                      {isStandard && (
+                        <p
+                          class="class-error"
+                          style={{
+                            color: "red",
+                            fontSize: "15px",
+                            marginBottom: "0px",
+                            marginTop: "5px",
+                          }}
+                        >
+                          *Please select the Class
+                        </p>
+                      )}
+                    </FormHelperText>
+                  </FormControl>
+                </div>
               </div>
               <div className="input-field state-input">
                 <FormControl className={classes.formControl}>

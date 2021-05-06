@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -28,7 +27,6 @@ const AddStudent = () => {
     const [lastname,setlastName]  = useState("");
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const [gender,setGender] = useState('');
     const [phone,setPhone] = useState('');
     const [standard,setStandard] = useState('');
     const [state,setState] = useState('');
@@ -41,7 +39,6 @@ const AddStudent = () => {
             lastname:lastname,
             email: email,
             password: password,
-            gender:gender,
             phone:phone,
             standard:standard,
             state:state
@@ -114,20 +111,6 @@ const AddStudent = () => {
                       </div>
                   </div>
                   <div class="row">
-                      <div class="col-md-6 mb-3">
-                          <label for="gender">Gender</label>
-                          <select class="form-select mb-0" id="gender" 
-                          name="gender" 
-                          value={gender}
-                          onChange={(e) => {
-                            setGender(e.target.value);
-                          }}
-                          aria-label="Gender select example">
-                              <option selected>Gender</option>
-                              <option value={"Female"}>Female</option>
-                              <option value={"Male"}>Male</option>
-                          </select>
-                      </div>
                       <div class="col-md-6 mb-3">
                           <div class="form-group">
                               <label for="phone">Mobile Number</label>

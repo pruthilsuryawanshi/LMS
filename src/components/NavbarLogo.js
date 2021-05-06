@@ -7,7 +7,7 @@ const NavbarLogo = () => {
              <img
               src="Images/logo.png"
               alt="Kids Galaxy Logo"
-              class="nav-logo"
+              className="nav-logo"
             />
     
    )

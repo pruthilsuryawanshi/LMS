@@ -7,36 +7,32 @@ const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
 
   return (
-    <div class="container-fluid">
-      <div class="row nav-bar">
-        <div class="col-3 nav-left">
+    <div className="container-fluid">
+      <div className="row nav-bar">
+        <div className="col-3 nav-left">
           <NavbarLogo/>
         </div>
-        <div class="col d-none d-lg-block nav-center">
-         <Link to='/adminlogin'>
-         <a href="{}" class="label-1">
+        <div className="col d-none d-lg-block nav-center">
+         <Link to='/adminlogin' className="label-1">
             Courses
-          </a>
          </Link>
-          <a href="{}" class="label-2">
+          <Link to='' className="label-2">
             What We Do
-          </a>
-          <a href="{}" class="label-3">
-            Who We Are
-          </a>
-        </div>
-        <i class="material-icons">search</i>
-        <i class="material-icons person-icon">person</i>
-        <div class="col-3 nav-right">
-          <Link to="/login">
-            <a href="{}" class="sign-in">
-              Sign In
-            </a>
           </Link>
+          <Link to='' className="label-3">
+            Who We Are
+          </Link>
+        </div>
+        <i className="material-icons">search</i>
+        <i className="material-icons person-icon">person</i>
+        <div className="col-3 nav-right">
+            <Link to='/login' className="sign-in">
+              Sign In
+            </Link>
           <Link to="#">
-            <a href="{}" class="request-demo">
+            <Link to='' className="request-demo">
               Request Demo
-            </a>
+            </Link>
           </Link>
         </div>
         <div
@@ -44,33 +40,33 @@ const Navbar = () => {
           className={` col-1 d-lg-none ${hamburger && "Diam"}`}
           onClick={() => setHamburger(!hamburger)}
         >
-          <div class="ham top"></div>
-          <div class="ham middle"></div>
-          <div class="ham bottom"></div>
+          <div className="ham top"></div>
+          <div className="ham middle"></div>
+          <div className="ham bottom"></div>
         </div>
       </div>
       <div className={`hiddenNav ${hamburger && "hamburgerOpen"}`}>
         <nav className="hiddenNavSearch-user">
           <ul className="hamburger-menu">
             <li className="hamburger-menu-item">
-              <a href="/login" className="hm-hover1">
+              <Link to='/login' className="hm-hover1">
                 Sign In
-              </a>
+              </Link>
             </li>
             <li className="hamburger-menu-item">
-              <a href="/admin" className="hm-hover2">
+              <Link to='/adminlogin' className="hm-hover2">
                 Courses
-              </a>
+              </Link>
             </li>
             <li className="hamburger-menu-item hm-hover3">
-              <a href="{}" className="hm-hover3">
+              <Link to='' className="hm-hover3">
                 Who We Are
-              </a>
+              </Link>
             </li>
             <li className="hamburger-menu-item hm-hover4">
-              <a href="{}" className="hm-hover4">
+              <Link to='' className="hm-hover4">
                 What We Do
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
