@@ -14,53 +14,45 @@ import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import axios from 'axios';
+import axios from "axios";
 import "./Login.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const Login = () => {
- 
-  const [email,setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [checkedB,setCheckedB] = useState(false);
-  const [first,setFirst] = useState(false);
+  const [checkedB, setCheckedB] = useState(false);
+  const [first, setFirst] = useState(false);
 
+  function handleSubmit(e) {
+    e.preventDefault();
 
-  
-  
-  function handleSubmit(e){
-    e.preventDefault()
-
-    if(validateEmail(email) === null){
-      
-      axios.post("http://127.0.0.1:8000/api/student/api/token/",{
-        
-        email: email,
-        password: password,
-        
-      }).then((res) => {
-        console.log(res);
-        localStorage.setItem('access_token', res.data.access_token);
-        localStorage.setItem('refresh_token', res.data.refresh_token);}
-        )
-      
-      
+    if (validateEmail(email) === null) {
+      axios
+        .post("http://127.0.0.1:8000/api/student/api/token/", {
+          email: email,
+          password: password,
+        })
+        .then((res) => {
+          console.log(res);
+          localStorage.setItem("access_token", res.data.access_token);
+          localStorage.setItem("refresh_token", res.data.refresh_token);
+        });
     }
   }
- 
-  function validateEmail(email) {
-    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-    if (email.length === 0) {
-      return "Email cannot be empty"
-    }
-    else if (!pattern.test(email)) {
-      return "Please enter valid email address";
-    }
-    else {
-      return null
-    }
 
+  function validateEmail(email) {
+    var pattern = new RegExp(
+      /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i
+    );
+    if (email.length === 0) {
+      return "Email cannot be empty";
+    } else if (!pattern.test(email)) {
+      return "Please enter valid email address";
+    } else {
+      return null;
+    }
   }
 
   const CssTextField = withStyles({
@@ -73,8 +65,7 @@ const Login = () => {
       },
       "& .MuiInput-underline:before": {
         borderBottomColor: " #57bb71",
-      }
-      
+      },
     },
   })(TextField);
 
@@ -82,9 +73,6 @@ const Login = () => {
     password: "",
     showPassword: false,
   });
-
-  
- 
 
   const handleClickShowPassword = () => {
     setValues({ ...values, showPassword: !values.showPassword });
@@ -96,7 +84,7 @@ const Login = () => {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div class="green-bg"></div>
       <div class="white-bg"></div>
 
@@ -142,10 +130,11 @@ const Login = () => {
                     name="email"
                     value={email}
                     helperText={first && validateEmail(email)}
-                    onBlur={() =>  setFirst(true)}  onFocus={()=> setFirst(false)}
-                    onChange={(e)=>  setEmail(e.target.value)}
+                    onBlur={() => setFirst(true)}
+                    onFocus={() => setFirst(false)}
+                    onChange={(e) => setEmail(e.target.value)}
                     label="Email"
-                    style={{ color: "#57bb71"}}
+                    style={{ color: "#57bb71" }}
                   />
                 </div>
 
@@ -157,7 +146,7 @@ const Login = () => {
                       type={values.showPassword ? "text" : "password"}
                       value={password}
                       name="password"
-                      onChange={(e)=> setPassword(e.target.value)}
+                      onChange={(e) => setPassword(e.target.value)}
                       endAdornment={
                         <InputAdornment position="end">
                           <IconButton
@@ -186,8 +175,8 @@ const Login = () => {
                     <FormControlLabel
                       control={
                         <Checkbox
-                        checked={checkedB}
-                        onChange={(e) => setCheckedB(e.target.checked)}
+                          checked={checkedB}
+                          onChange={(e) => setCheckedB(e.target.checked)}
                           name="checkedB"
                           color="primary"
                         />
@@ -202,8 +191,12 @@ const Login = () => {
 
                 <div className="next-button">
                   <Link to="/studentdashboard">
-                    <Button variant="contained" color="secondary" type="submit"
-                     onClick={handleSubmit}>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      type="submit"
+                      onClick={handleSubmit}
+                    >
                       LogIn
                     </Button>
                   </Link>
@@ -235,7 +228,7 @@ const Login = () => {
           </div> */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

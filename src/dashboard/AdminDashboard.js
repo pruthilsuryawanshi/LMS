@@ -285,6 +285,7 @@ export default function AdminDashboard() {
                 {!search && (
                   <SearchIcon
                     color="#fff"
+                    className="search-icon"
                     fontSize="medium"
                     onClick={Search}
                     style={{ cursor: "pointer" }}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useParams, Redirect } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";

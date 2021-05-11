@@ -12,6 +12,12 @@ h3 {
   background: #fff;
   padding: 12px;
 }
+.search-icon:hover {
+  color: #495057;
+}
+.screen:hover {
+  color: #495057;
+}
 
 .search .form-control {
   display: block;

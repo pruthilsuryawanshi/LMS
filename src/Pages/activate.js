@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useParams, Redirect } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
 function Activate() {
   const [verified, setIsVerified] = useState(false);
